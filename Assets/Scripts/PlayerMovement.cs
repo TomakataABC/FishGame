@@ -5,13 +5,17 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    [SerializeField] float HorizontalSpeed { get; set; } = 0f;
-    [SerializeField] float VerticalSpeed { get; set; } = 0f;
+    public float HorizontalSpeed;
+    public float VerticalSpeed;
 
-    [SerializeField] float MaxVerticalSpeed { get; set; } = 1000f;
-    [SerializeField] float MaxHorizontalSpeed { get; set; } = 1000f;
+    public float MaxVerticalSpeed;
+    public float MaxHorizontalSpeed;
 
-    [SerializeField] int Score { get; set; } = 0;
+    public enum Direction { Left, Right }
+
+    public Direction PlayerDirection;
+
+    public int Score;
 
     private void Start()
     {
@@ -22,26 +26,47 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         Move();
+        Turn();
     }
 
     void Move()
     {
         ReactToAreaBoundries();
         ReactToInput();
-        transform.Translate(HorizontalSpeed * Time.deltaTime, VerticalSpeed * Time.deltaTime,0);
+        if (PlayerDirection == Direction.Right)
+        {
+            transform.Translate(-(HorizontalSpeed * Time.deltaTime), (VerticalSpeed * Time.deltaTime), 0);
+        }
+        else
+        {
+            transform.Translate(HorizontalSpeed * Time.deltaTime, (VerticalSpeed * Time.deltaTime), 0);
+        }
     }
 
     void ReactToInput()
     {
         float horizontalSpeed = Input.GetAxis("Horizontal");
         float verticalSpeed = Input.GetAxis("Vertical");
-        HorizontalSpeed = (HorizontalSpeed + horizontalSpeed * (float)Math.Log(MaxHorizontalSpeed - HorizontalSpeed)) * 0.8f;
-        VerticalSpeed = (VerticalSpeed + verticalSpeed * (float)Math.Log(MaxVerticalSpeed - VerticalSpeed)) * 0.8f;
+        HorizontalSpeed = (HorizontalSpeed + horizontalSpeed * (float)Math.Log(MaxHorizontalSpeed - HorizontalSpeed)) * 0.5f;
+        VerticalSpeed = (VerticalSpeed + verticalSpeed * (float)Math.Log(MaxVerticalSpeed - VerticalSpeed)) * 0.5f;
 
-        HorizontalSpeed = HorizontalSpeed / (Math.Abs(VerticalSpeed * Time.deltaTime) + 1);
+        HorizontalSpeed = PlayerDirection == Direction.Left ? HorizontalSpeed / (Math.Abs(VerticalSpeed * Time.deltaTime) + 1) : -1 * (HorizontalSpeed / (Math.Abs(VerticalSpeed * Time.deltaTime) - 1));
         VerticalSpeed = VerticalSpeed / (Math.Abs(HorizontalSpeed * Time.deltaTime) + 1);
+    }
 
-        Debug.Log(HorizontalSpeed);
+    void Turn()
+    {
+        float horizontalSpeed = Input.GetAxis("Horizontal");
+        if (horizontalSpeed < 0 && PlayerDirection == Direction.Left)
+        {
+            transform.Rotate(new Vector3(0, 180));
+            PlayerDirection = Direction.Right;
+        }
+        else if (horizontalSpeed > 0 && PlayerDirection == Direction.Right)
+        {
+            transform.Rotate(new Vector3(0, 180));
+            PlayerDirection = Direction.Left;
+        }
     }
 
     void ReactToAreaBoundries()
