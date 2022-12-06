@@ -1,12 +1,17 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class PlayerMovement : MonoBehaviour
 {
+    public GameSetup GameSetup;
+
     public float HorizontalSpeed;
     public float VerticalSpeed;
+
+    public float HorizontalSpeedOut;
+    public float VerticalSpeedOut;
 
     public float MaxVerticalSpeed;
     public float MaxHorizontalSpeed;
@@ -19,7 +24,15 @@ public class PlayerMovement : MonoBehaviour
 
     private void Start()
     {
-        
+        HorizontalSpeedOut = 0;
+        VerticalSpeedOut = 0;
+
+        HorizontalSpeed = 0;
+        VerticalSpeed = 0;
+
+        float x = UnityEngine.Random.Range(-GameSetup.UnitWidth, GameSetup.UnitHeight);
+        float y = UnityEngine.Random.Range(-GameSetup.UnitWidth, GameSetup.UnitHeight);
+        transform.position = new Vector3(x, y);
     }
 
     // Update is called once per frame
@@ -35,11 +48,11 @@ public class PlayerMovement : MonoBehaviour
         ReactToInput();
         if (PlayerDirection == Direction.Right)
         {
-            transform.Translate(-(HorizontalSpeed * Time.deltaTime), (VerticalSpeed * Time.deltaTime), 0);
+            transform.Translate(-(HorizontalSpeed * Time.deltaTime) + (HorizontalSpeedOut * Time.deltaTime), (VerticalSpeed * Time.deltaTime)+(VerticalSpeedOut * Time.deltaTime), 0);
         }
         else
         {
-            transform.Translate(HorizontalSpeed * Time.deltaTime, (VerticalSpeed * Time.deltaTime), 0);
+            transform.Translate((HorizontalSpeed * Time.deltaTime) + (HorizontalSpeedOut * Time.deltaTime), (VerticalSpeed * Time.deltaTime) + (VerticalSpeedOut * Time.deltaTime), 0);
         }
     }
 
@@ -71,6 +84,37 @@ public class PlayerMovement : MonoBehaviour
 
     void ReactToAreaBoundries()
     {
+        
+    }
 
+    bool isOutOfArea()
+    {
+        if (Math.Abs(transform.position.x) > GameSetup.UnitWidth || transform.position.y > GameSetup.UnitHeight)
+        {
+            return true;
+        }
+        return false;
+    }
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.tag == "Planton")
+        {
+            StartCoroutine(TriggerPlanton(other));
+        }
+    }
+
+    IEnumerator TriggerPlanton(Collider2D planton)
+    {
+        yield return new WaitForSeconds(0.05f);
+        var plantus = planton.GetComponentInParent<Planton>();
+        plantus.enabled = false;
+        plantus.gameObject.GetComponent<SpriteRenderer>().enabled = false;
+        plantus.Reposition();
+        Score++;
+        Debug.Log("Planton taken.");
+        yield return new WaitForSecondsRealtime(3);
+        plantus.enabled = true;
+        plantus.gameObject.GetComponent<SpriteRenderer>().enabled = true;
     }
 }

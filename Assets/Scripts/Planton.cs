@@ -6,21 +6,19 @@ public class Planton : MonoBehaviour
 {
     public float Scale;
 
-    public BackgroundSetup Background;
+    public GameSetup GameSetup;
+
+    private void Start()
+    {
+        tag = "Planton";
+    }
 
     public void Reposition()
     {
         transform.localScale = new Vector3(Scale, Scale);
-        float x = Random.Range(-BackgroundSize(Background.Width), BackgroundSize(Background.Width));
-        float y = Random.Range(-BackgroundSize(Background.Height), BackgroundSize(Background.Height));
-        Debug.Log(Background.scale);
-        Debug.Log(Background.scale);
+        float x = Random.Range(-GameSetup.UnitWidth, GameSetup.UnitHeight);
+        float y = Random.Range(-GameSetup.UnitWidth, GameSetup.UnitHeight);
         transform.position = new Vector3(x, y);
-    }
-
-    float BackgroundSize(float dimension)
-    {
-        return Background.scale * dimension;
     }
 
     // Update is called once per frame
