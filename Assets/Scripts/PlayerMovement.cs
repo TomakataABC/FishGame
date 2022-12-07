@@ -84,12 +84,51 @@ public class PlayerMovement : MonoBehaviour
 
     void ReactToAreaBoundries()
     {
-        
+        float increment = 0.05f;
+        if (isOutOfArea())
+        {
+            if (transform.position.x > GameSetup.UnitWidth)
+            {
+                HorizontalSpeedOut = PlayerDirection == Direction.Left ? HorizontalSpeedOut - increment : HorizontalSpeedOut + increment;
+            }
+            if (transform.position.x < -1 * GameSetup.UnitWidth)
+            {
+                HorizontalSpeedOut = PlayerDirection == Direction.Left ? HorizontalSpeedOut + increment : HorizontalSpeedOut - increment;
+            }
+            if (transform.position.y > GameSetup.UnitHeight)
+            {
+                VerticalSpeedOut = VerticalSpeedOut - increment;
+            }
+            if (transform.position.y < -1 * GameSetup.UnitHeight)
+            {
+                VerticalSpeedOut = VerticalSpeedOut + increment;
+            }
+        }
+        else
+        {
+            if (HorizontalSpeedOut > 0)
+            {
+                HorizontalSpeedOut = HorizontalSpeedOut - increment;
+            }
+            else if (HorizontalSpeedOut < 0)
+            {
+                HorizontalSpeedOut = HorizontalSpeedOut + increment;
+            }
+
+            if (VerticalSpeedOut > 0)
+            {
+                VerticalSpeedOut = VerticalSpeedOut - increment;
+            }
+            else if (HorizontalSpeedOut < 0)
+            {
+                VerticalSpeedOut = VerticalSpeedOut + increment;
+            }
+        }
     }
 
     bool isOutOfArea()
     {
-        if (Math.Abs(transform.position.x) > GameSetup.UnitWidth || transform.position.y > GameSetup.UnitHeight)
+        if (Math.Abs(transform.position.x) > GameSetup.UnitWidth || Math.Abs(transform.position.y) > GameSetup.UnitHeight)
         {
             return true;
         }
@@ -112,7 +151,6 @@ public class PlayerMovement : MonoBehaviour
         plantus.gameObject.GetComponent<SpriteRenderer>().enabled = false;
         plantus.Reposition();
         Score++;
-        Debug.Log("Planton taken.");
         yield return new WaitForSecondsRealtime(3);
         plantus.enabled = true;
         plantus.gameObject.GetComponent<SpriteRenderer>().enabled = true;
