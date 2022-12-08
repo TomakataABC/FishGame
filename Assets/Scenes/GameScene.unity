@@ -220,11 +220,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70a0fd217d506684ca98c28d9acf4e2c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PlayerCount: 2
+  PlayerCount: 15
   absoluteBackground: {fileID: 1477821243}
   planton: {fileID: 893122009}
-  UnitWidth: 0
-  UnitHeight: 0
+  Player: {fileID: 1630703505}
+  PlayerHeight: 0.6
+  PlayerWidth: 0.5
   Width: 10.6
   Height: 10.6
 --- !u!1 &519420028
@@ -689,7 +690,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1630703504}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.04, y: -0.04, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.2082, y: 0.4494, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

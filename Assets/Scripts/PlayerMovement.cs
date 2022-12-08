@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System;
+using UnityEngine.UIElements;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -29,10 +30,6 @@ public class PlayerMovement : MonoBehaviour
 
         HorizontalSpeed = 0;
         VerticalSpeed = 0;
-
-        float x = UnityEngine.Random.Range(-GameSetup.UnitWidth, GameSetup.UnitHeight);
-        float y = UnityEngine.Random.Range(-GameSetup.UnitWidth, GameSetup.UnitHeight);
-        transform.position = new Vector3(x, y);
     }
 
     // Update is called once per frame
