@@ -36,7 +36,7 @@ public class GameSetup : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        scale = 0.3f + (PlayerCount * 0.008f * PlayerCount);
+        scale = 0.8f + (PlayerCount * 0.01f * PlayerCount);
         transform.localScale = new Vector3(scale, scale);
         transform.position = Vector3.zero;
 
@@ -88,8 +88,6 @@ public class GameSetup : MonoBehaviour
             if (!isOccupied[i, j])
             {
                 isFound = true;
-                Debug.Log(isFound);
-                Debug.Log(i + " " + j);
                 isOccupied[i, j] = true;
                 x = values[i] * UnitWidth;
                 y = values[j] * UnitHeight;
@@ -98,11 +96,6 @@ public class GameSetup : MonoBehaviour
 
         float xIncrement = UnityEngine.Random.value * (UnitWidth / 2 - 2 * PlayerWidth);
         float yIncrement = UnityEngine.Random.value * (UnitHeight / 2 - 2 * PlayerWidth);
-
-        Debug.Log(UnitWidth + " " + UnitHeight);
-        Debug.Log(xIncrement + " " + yIncrement + " " + x + " " + y);
-        Debug.Log(x + xIncrement + PlayerWidth);
-        Debug.Log(y + yIncrement + PlayerHeight);
 
         player.transform.position = Vector3.zero;
         player.transform.Translate(x + xIncrement + PlayerWidth, y + yIncrement + PlayerHeight, 0);
@@ -113,7 +106,7 @@ public class GameSetup : MonoBehaviour
         var plantus = planton.GetComponent<Planton>();
         plantus.Reposition();
         Plantons.Add(plantus);
-        for (int i = 0; i < (PlayerCount * 3) - 1; i++)
+        for (int i = 0; i < (PlayerCount * 2) - 1; i++)
         {
             var newPlanton = Instantiate(planton);
             var newPlantus = newPlanton.GetComponent<Planton>();

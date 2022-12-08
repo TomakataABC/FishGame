@@ -6,16 +6,19 @@ public class FollowCamera : MonoBehaviour
 {
     public GameObject player;
     private Vector3 newtrans;
+    private Camera cameraCam;
+    public float z;
 
     void Start()
     {
-        newtrans = transform.position;
-
+        newtrans = player.transform.position + new Vector3(0,0,-20f);
+        cameraCam = GetComponent<Camera>();
     }
     void LateUpdate()
     {
         newtrans.x = player.transform.position.x;
         newtrans.y = player.transform.position.y;
+        cameraCam.orthographicSize = z;
         transform.position = newtrans;
     }
 }

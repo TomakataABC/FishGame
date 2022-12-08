@@ -220,7 +220,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70a0fd217d506684ca98c28d9acf4e2c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PlayerCount: 15
+  PlayerCount: 1
   absoluteBackground: {fileID: 1477821243}
   planton: {fileID: 893122009}
   Player: {fileID: 1630703505}
@@ -326,6 +326,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1630703504}
+  z: 0
 --- !u!1 &893122009
 GameObject:
   m_ObjectHideFlags: 0
@@ -387,7 +388,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 0ccc508108fa6ed4fa11b4a467d7f609, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 31a8f2568c18a3d4bb4d6424696686a5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -406,8 +407,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 893122009}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.23, y: 0.08, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
+  m_LocalPosition: {x: -7.35, y: 2.82, z: 0}
+  m_LocalScale: {x: 0.1, y: 0.1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -425,7 +426,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7eb5a5410be25834cbf0279542a8ee49, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Scale: 0.5
+  Scale: 0.05
   GameSetup: {fileID: 201215730}
 --- !u!58 &893122013
 CircleCollider2D:
@@ -574,11 +575,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c543559711abc20488cd0919edabf26a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  followCamera: {fileID: 0}
+  lowFish: {fileID: 21300000, guid: 76631fad5f1190c49ab41494101ee004, type: 3}
+  highFish: {fileID: 21300000, guid: 6adc01332b44544468a7baccc63c23ef, type: 3}
+  pufferFish: {fileID: 21300000, guid: be93a71faf2c92148a2c5ccdc3870bd3, type: 3}
+  octopus: {fileID: 21300000, guid: 21cf9eeef14b79a4190a8c554150e1e2, type: 3}
+  shark: {fileID: 21300000, guid: c01511427dfe5ae41bf405fda39a0cc6, type: 3}
   GameSetup: {fileID: 201215730}
-  HorizontalSpeed: 1
-  VerticalSpeed: 1
-  HorizontalSpeedOut: 0
-  VerticalSpeedOut: 0
   MaxVerticalSpeed: 1000
   MaxHorizontalSpeed: 1000
   PlayerDirection: 0
@@ -679,7 +682,7 @@ SpriteRenderer:
   m_Size: {x: 4.74, y: 2.66}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &1630703509
