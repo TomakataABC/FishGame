@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 using UnityEngine.UIElements;
+using TMPro;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -30,8 +31,10 @@ public class PlayerMovement : MonoBehaviour
     public Direction PlayerDirection;
 
     public int Score;
-    
-    void Start()
+
+    public TextMeshProUGUI ScoreText;
+
+    private void Start()
     {
         HorizontalSpeedOut = 0;
         VerticalSpeedOut = 0;
@@ -229,6 +232,7 @@ public class PlayerMovement : MonoBehaviour
         plantus.gameObject.GetComponent<SpriteRenderer>().enabled = false;
         plantus.Reposition();
         Score++;
+        ScoreText.text = Score.ToString();
         yield return new WaitForSecondsRealtime(3);
         plantus.enabled = true;
         plantus.gameObject.GetComponent<SpriteRenderer>().enabled = true;
