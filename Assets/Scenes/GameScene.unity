@@ -220,14 +220,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70a0fd217d506684ca98c28d9acf4e2c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PlayerCount: 1
+  PlayerCount: 15
   absoluteBackground: {fileID: 1477821243}
   planton: {fileID: 893122009}
   Player: {fileID: 1630703505}
   PlayerHeight: 0.6
   PlayerWidth: 0.5
-  Width: 10.6
-  Height: 10.6
+  Width: 10.65
+  Height: 10.65
 --- !u!1 &245727601
 GameObject:
   m_ObjectHideFlags: 0
@@ -461,6 +461,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1630703504}
+  z: 0
 --- !u!1 &890354767
 GameObject:
   m_ObjectHideFlags: 0
@@ -810,7 +811,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c543559711abc20488cd0919edabf26a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  followCamera: {fileID: 0}
+  followCamera: {fileID: 519420033}
   lowFish: {fileID: 21300000, guid: 76631fad5f1190c49ab41494101ee004, type: 3}
   highFish: {fileID: 21300000, guid: 6adc01332b44544468a7baccc63c23ef, type: 3}
   pufferFish: {fileID: 21300000, guid: be93a71faf2c92148a2c5ccdc3870bd3, type: 3}

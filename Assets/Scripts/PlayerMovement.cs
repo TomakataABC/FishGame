@@ -187,7 +187,11 @@ public class PlayerMovement : MonoBehaviour
         }
         else
         {
-            if (HorizontalSpeedOut > 0)
+            if ((HorizontalSpeedOut < increment && HorizontalSpeedOut > 0) || (HorizontalSpeedOut > -increment && HorizontalSpeedOut < 0))
+            {
+                HorizontalSpeedOut = 0;
+            }
+            else if (HorizontalSpeedOut > 0)
             {
                 HorizontalSpeedOut = HorizontalSpeedOut - increment;
             }
@@ -196,11 +200,15 @@ public class PlayerMovement : MonoBehaviour
                 HorizontalSpeedOut = HorizontalSpeedOut + increment;
             }
 
-            if (VerticalSpeedOut > 0)
+            if ((VerticalSpeedOut < increment && VerticalSpeedOut > 0) || (VerticalSpeedOut > -increment && VerticalSpeedOut < 0))
+            {
+                VerticalSpeedOut = 0;
+            }
+            else if(VerticalSpeedOut > 0)
             {
                 VerticalSpeedOut = VerticalSpeedOut - increment;
             }
-            else if (HorizontalSpeedOut < 0)
+            else if (VerticalSpeedOut < 0)
             {
                 VerticalSpeedOut = VerticalSpeedOut + increment;
             }
