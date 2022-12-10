@@ -61,3 +61,4 @@ crashlytics-build.properties
 #VS stuff
 .vsconfig
 
+FishGameServer/Library/PackageCache/com.unity.burst@1.6.6/.Runtime/hostmac/lld

@@ -1,0 +1,3587 @@
+{
+  "Nodes": [
+    {
+      "Annotation": "all_tundra_nodes",
+      "Action": "",
+      "Inputs": [],
+      "Outputs": [],
+      "ToBuildDependencies": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90,
+        91,
+        92,
+        93,
+        94,
+        95,
+        96,
+        97,
+        98,
+        99,
+        100,
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107,
+        108,
+        109,
+        110,
+        111,
+        112,
+        113,
+        114,
+        115,
+        116,
+        117,
+        118,
+        119,
+        120,
+        121,
+        122,
+        123,
+        124,
+        125,
+        126,
+        127,
+        128,
+        129,
+        130,
+        131,
+        132,
+        133,
+        134,
+        135,
+        136,
+        137,
+        138,
+        139,
+        140,
+        141,
+        142,
+        143,
+        144,
+        145,
+        146,
+        147,
+        148,
+        149,
+        150,
+        151,
+        152,
+        153,
+        154,
+        155,
+        156,
+        157,
+        158,
+        159,
+        160,
+        161,
+        162,
+        163,
+        164,
+        165,
+        166,
+        167,
+        168,
+        169,
+        170,
+        171,
+        172,
+        173,
+        174,
+        175,
+        176,
+        177,
+        178,
+        179,
+        180,
+        181,
+        182,
+        183,
+        184,
+        185,
+        186,
+        187,
+        188,
+        189,
+        190,
+        191,
+        192,
+        193,
+        194,
+        195,
+        196,
+        197,
+        198,
+        199,
+        200,
+        201,
+        202,
+        203,
+        204,
+        205,
+        206,
+        207,
+        208,
+        209,
+        210,
+        211,
+        212,
+        213,
+        214,
+        215,
+        216,
+        217,
+        218,
+        219,
+        220,
+        221,
+        222,
+        223,
+        224,
+        225,
+        226,
+        227,
+        228,
+        229,
+        230,
+        231,
+        232,
+        233,
+        234,
+        235,
+        236,
+        237,
+        238,
+        239,
+        240,
+        241,
+        242,
+        243,
+        244,
+        245,
+        246,
+        247,
+        248,
+        249,
+        250,
+        251,
+        252,
+        253,
+        254,
+        255,
+        256,
+        257,
+        258,
+        259
+      ],
+      "AllowUnexpectedOutput": true,
+      "DebugActionIndex": 0
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/level0",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Library/PlayerDataCache/Linux64/Data/level0"
+      ],
+      "Outputs": [
+        "Server_Data/level0"
+      ],
+      "DebugActionIndex": 1
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/RuntimeInitializeOnLoads.json",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Library/PlayerDataCache/Linux64/Data/RuntimeInitializeOnLoads.json"
+      ],
+      "Outputs": [
+        "Server_Data/RuntimeInitializeOnLoads.json"
+      ],
+      "DebugActionIndex": 2
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/ScriptingAssemblies.json",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Library/PlayerDataCache/Linux64/Data/ScriptingAssemblies.json"
+      ],
+      "Outputs": [
+        "Server_Data/ScriptingAssemblies.json"
+      ],
+      "DebugActionIndex": 3
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/globalgamemanagers.assets",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Library/PlayerDataCache/Linux64/Data/globalgamemanagers.assets"
+      ],
+      "Outputs": [
+        "Server_Data/globalgamemanagers.assets"
+      ],
+      "DebugActionIndex": 4
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/globalgamemanagers",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Library/PlayerDataCache/Linux64/Data/globalgamemanagers"
+      ],
+      "Outputs": [
+        "Server_Data/globalgamemanagers"
+      ],
+      "DebugActionIndex": 5
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/sharedassets0.assets",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Library/PlayerDataCache/Linux64/Data/sharedassets0.assets"
+      ],
+      "Outputs": [
+        "Server_Data/sharedassets0.assets"
+      ],
+      "DebugActionIndex": 6
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/boot.config",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Library/PlayerDataCache/Linux64/Data/boot.config"
+      ],
+      "Outputs": [
+        "Server_Data/boot.config"
+      ],
+      "DebugActionIndex": 7
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Resources/unity_builtin_extra",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Library/PlayerDataCache/Linux64/Data/Resources/unity_builtin_extra"
+      ],
+      "Outputs": [
+        "Server_Data/Resources/unity_builtin_extra"
+      ],
+      "DebugActionIndex": 8
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/StreamingAssets/UnityServicesProjectConfiguration.json",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Library/com.unity.services.core/UnityServicesProjectConfiguration.json"
+      ],
+      "Outputs": [
+        "Server_Data/StreamingAssets/UnityServicesProjectConfiguration.json"
+      ],
+      "DebugActionIndex": 9
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Plugins/lib_burst_generated.so",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Plugins/lib_burst_generated.so"
+      ],
+      "Outputs": [
+        "Server_Data/Plugins/lib_burst_generated.so"
+      ],
+      "DebugActionIndex": 10
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/UnityEngine.ImageConversionModule.dll",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/UnityEngine.ImageConversionModule.dll"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/UnityEngine.ImageConversionModule.dll"
+      ],
+      "DebugActionIndex": 11
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/UnityEngine.ProfilerModule.pdb",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/UnityEngine.ProfilerModule.pdb"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/UnityEngine.ProfilerModule.pdb"
+      ],
+      "DebugActionIndex": 12
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/Mono.Security.dll",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/Mono.Security.dll"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/Mono.Security.dll"
+      ],
+      "DebugActionIndex": 13
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/UnityEngine.UnityWebRequestTextureModule.pdb",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/UnityEngine.UnityWebRequestTextureModule.pdb"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/UnityEngine.UnityWebRequestTextureModule.pdb"
+      ],
+      "DebugActionIndex": 14
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/Unity.InternalAPIEngineBridge.001.dll",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/Unity.InternalAPIEngineBridge.001.dll"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/Unity.InternalAPIEngineBridge.001.dll"
+      ],
+      "DebugActionIndex": 15
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/UnityEngine.HotReloadModule.dll",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/UnityEngine.HotReloadModule.dll"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/UnityEngine.HotReloadModule.dll"
+      ],
+      "DebugActionIndex": 16
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/UnityEngine.AndroidJNIModule.pdb",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/UnityEngine.AndroidJNIModule.pdb"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/UnityEngine.AndroidJNIModule.pdb"
+      ],
+      "DebugActionIndex": 17
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/Unity.2D.Animation.Runtime.pdb",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/Unity.2D.Animation.Runtime.pdb"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/Unity.2D.Animation.Runtime.pdb"
+      ],
+      "DebugActionIndex": 18
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/UnityEngine.CrashReportingModule.dll",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/UnityEngine.CrashReportingModule.dll"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/UnityEngine.CrashReportingModule.dll"
+      ],
+      "DebugActionIndex": 19
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/UnityEngine.VRModule.pdb",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/UnityEngine.VRModule.pdb"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/UnityEngine.VRModule.pdb"
+      ],
+      "DebugActionIndex": 20
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/UnityEngine.ClusterRendererModule.dll",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/UnityEngine.ClusterRendererModule.dll"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/UnityEngine.ClusterRendererModule.dll"
+      ],
+      "DebugActionIndex": 21
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/System.Xml.Linq.dll",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/System.Xml.Linq.dll"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/System.Xml.Linq.dll"
+      ],
+      "DebugActionIndex": 22
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/Unity.2D.Common.Runtime.dll",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/Unity.2D.Common.Runtime.dll"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/Unity.2D.Common.Runtime.dll"
+      ],
+      "DebugActionIndex": 23
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/UnityEngine.InputLegacyModule.dll",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/UnityEngine.InputLegacyModule.dll"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/UnityEngine.InputLegacyModule.dll"
+      ],
+      "DebugActionIndex": 24
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll"
+      ],
+      "DebugActionIndex": 25
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/UnityEngine.AIModule.dll",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/UnityEngine.AIModule.dll"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/UnityEngine.AIModule.dll"
+      ],
+      "DebugActionIndex": 26
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.pdb",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.pdb"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.pdb"
+      ],
+      "DebugActionIndex": 27
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/UnityEngine.DirectorModule.dll",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/UnityEngine.DirectorModule.dll"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/UnityEngine.DirectorModule.dll"
+      ],
+      "DebugActionIndex": 28
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/Unity.Services.Core.Telemetry.dll",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/Unity.Services.Core.Telemetry.dll"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/Unity.Services.Core.Telemetry.dll"
+      ],
+      "DebugActionIndex": 29
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/UnityEngine.TerrainPhysicsModule.dll",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/UnityEngine.TerrainPhysicsModule.dll"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/UnityEngine.TerrainPhysicsModule.dll"
+      ],
+      "DebugActionIndex": 30
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/UnityEngine.CrashReportingModule.pdb",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/UnityEngine.CrashReportingModule.pdb"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/UnityEngine.CrashReportingModule.pdb"
+      ],
+      "DebugActionIndex": 31
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/UnityEngine.TerrainModule.pdb",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/UnityEngine.TerrainModule.pdb"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/UnityEngine.TerrainModule.pdb"
+      ],
+      "DebugActionIndex": 32
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/UnityEngine.UnityTestProtocolModule.dll",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/UnityEngine.UnityTestProtocolModule.dll"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/UnityEngine.UnityTestProtocolModule.dll"
+      ],
+      "DebugActionIndex": 33
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/Unity.Services.Core.Environments.Internal.pdb",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/Unity.Services.Core.Environments.Internal.pdb"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/Unity.Services.Core.Environments.Internal.pdb"
+      ],
+      "DebugActionIndex": 34
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/Unity.2D.IK.Runtime.dll",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/Unity.2D.IK.Runtime.dll"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/Unity.2D.IK.Runtime.dll"
+      ],
+      "DebugActionIndex": 35
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/UnityEngine.XRModule.pdb",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/UnityEngine.XRModule.pdb"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/UnityEngine.XRModule.pdb"
+      ],
+      "DebugActionIndex": 36
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/Unity.Services.Core.Environments.pdb",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/Unity.Services.Core.Environments.pdb"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/Unity.Services.Core.Environments.pdb"
+      ],
+      "DebugActionIndex": 37
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/UnityEngine.GameCenterModule.pdb",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/UnityEngine.GameCenterModule.pdb"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/UnityEngine.GameCenterModule.pdb"
+      ],
+      "DebugActionIndex": 38
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/UnityEngine.UIElementsNativeModule.pdb",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/UnityEngine.UIElementsNativeModule.pdb"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/UnityEngine.UIElementsNativeModule.pdb"
+      ],
+      "DebugActionIndex": 39
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/UnityEngine.DSPGraphModule.pdb",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/UnityEngine.DSPGraphModule.pdb"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/UnityEngine.DSPGraphModule.pdb"
+      ],
+      "DebugActionIndex": 40
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/UnityEngine.ClusterRendererModule.pdb",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/UnityEngine.ClusterRendererModule.pdb"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/UnityEngine.ClusterRendererModule.pdb"
+      ],
+      "DebugActionIndex": 41
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/UnityEngine.UI.pdb",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/UnityEngine.UI.pdb"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/UnityEngine.UI.pdb"
+      ],
+      "DebugActionIndex": 42
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/UnityEngine.AccessibilityModule.dll",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/UnityEngine.AccessibilityModule.dll"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/UnityEngine.AccessibilityModule.dll"
+      ],
+      "DebugActionIndex": 43
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/System.Transactions.dll",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/System.Transactions.dll"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/System.Transactions.dll"
+      ],
+      "DebugActionIndex": 44
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/UnityEngine.SpriteMaskModule.dll",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/UnityEngine.SpriteMaskModule.dll"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/UnityEngine.SpriteMaskModule.dll"
+      ],
+      "DebugActionIndex": 45
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll"
+      ],
+      "DebugActionIndex": 46
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/Unity.Services.Core.Telemetry.pdb",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/Unity.Services.Core.Telemetry.pdb"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/Unity.Services.Core.Telemetry.pdb"
+      ],
+      "DebugActionIndex": 47
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll"
+      ],
+      "DebugActionIndex": 48
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/UnityEngine.AndroidJNIModule.dll",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/UnityEngine.AndroidJNIModule.dll"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/UnityEngine.AndroidJNIModule.dll"
+      ],
+      "DebugActionIndex": 49
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/UnityEngine.SubstanceModule.pdb",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/UnityEngine.SubstanceModule.pdb"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/UnityEngine.SubstanceModule.pdb"
+      ],
+      "DebugActionIndex": 50
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll"
+      ],
+      "DebugActionIndex": 51
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/UnityEngine.TextCoreFontEngineModule.pdb",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/UnityEngine.TextCoreFontEngineModule.pdb"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/UnityEngine.TextCoreFontEngineModule.pdb"
+      ],
+      "DebugActionIndex": 52
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/UnityEngine.ClothModule.dll",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/UnityEngine.ClothModule.dll"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/UnityEngine.ClothModule.dll"
+      ],
+      "DebugActionIndex": 53
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/UnityEngine.TextRenderingModule.dll",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/UnityEngine.TextRenderingModule.dll"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/UnityEngine.TextRenderingModule.dll"
+      ],
+      "DebugActionIndex": 54
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/UnityEngine.UIElementsModule.pdb",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/UnityEngine.UIElementsModule.pdb"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/UnityEngine.UIElementsModule.pdb"
+      ],
+      "DebugActionIndex": 55
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/UnityEngine.VFXModule.dll",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/UnityEngine.VFXModule.dll"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/UnityEngine.VFXModule.dll"
+      ],
+      "DebugActionIndex": 56
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/System.dll",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/System.dll"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/System.dll"
+      ],
+      "DebugActionIndex": 57
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/Unity.2D.SpriteShape.Runtime.dll",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/Unity.2D.SpriteShape.Runtime.dll"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/Unity.2D.SpriteShape.Runtime.dll"
+      ],
+      "DebugActionIndex": 58
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/Unity.Services.Core.Analytics.pdb",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/Unity.Services.Core.Analytics.pdb"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/Unity.Services.Core.Analytics.pdb"
+      ],
+      "DebugActionIndex": 59
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/Unity.Services.Core.Device.pdb",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/Unity.Services.Core.Device.pdb"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/Unity.Services.Core.Device.pdb"
+      ],
+      "DebugActionIndex": 60
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/Unity.Services.Core.Environments.Internal.dll",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/Unity.Services.Core.Environments.Internal.dll"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/Unity.Services.Core.Environments.Internal.dll"
+      ],
+      "DebugActionIndex": 61
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/UnityEngine.UmbraModule.pdb",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/UnityEngine.UmbraModule.pdb"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/UnityEngine.UmbraModule.pdb"
+      ],
+      "DebugActionIndex": 62
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/System.IO.Compression.FileSystem.dll",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/System.IO.Compression.FileSystem.dll"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/System.IO.Compression.FileSystem.dll"
+      ],
+      "DebugActionIndex": 63
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/UnityEngine.TLSModule.dll",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/UnityEngine.TLSModule.dll"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/UnityEngine.TLSModule.dll"
+      ],
+      "DebugActionIndex": 64
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/Unity.Services.Core.Registration.dll",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/Unity.Services.Core.Registration.dll"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/Unity.Services.Core.Registration.dll"
+      ],
+      "DebugActionIndex": 65
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/Unity.Burst.Cecil.Mdb.dll",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/Unity.Burst.Cecil.Mdb.dll"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/Unity.Burst.Cecil.Mdb.dll"
+      ],
+      "DebugActionIndex": 66
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/UnityEngine.TerrainPhysicsModule.pdb",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/UnityEngine.TerrainPhysicsModule.pdb"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/UnityEngine.TerrainPhysicsModule.pdb"
+      ],
+      "DebugActionIndex": 67
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/UnityEngine.PhysicsModule.pdb",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/UnityEngine.PhysicsModule.pdb"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/UnityEngine.PhysicsModule.pdb"
+      ],
+      "DebugActionIndex": 68
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/UnityEngine.UmbraModule.dll",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/UnityEngine.UmbraModule.dll"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/UnityEngine.UmbraModule.dll"
+      ],
+      "DebugActionIndex": 69
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/UnityEngine.UnityConnectModule.pdb",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/UnityEngine.UnityConnectModule.pdb"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/UnityEngine.UnityConnectModule.pdb"
+      ],
+      "DebugActionIndex": 70
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/RiptideNetworking.dll",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/RiptideNetworking.dll"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/RiptideNetworking.dll"
+      ],
+      "DebugActionIndex": 71
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/UnityEngine.ProfilerModule.dll",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/UnityEngine.ProfilerModule.dll"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/UnityEngine.ProfilerModule.dll"
+      ],
+      "DebugActionIndex": 72
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/System.Security.dll",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/System.Security.dll"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/System.Security.dll"
+      ],
+      "DebugActionIndex": 73
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/UnityEngine.ClusterInputModule.dll",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/UnityEngine.ClusterInputModule.dll"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/UnityEngine.ClusterInputModule.dll"
+      ],
+      "DebugActionIndex": 74
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/UnityEngine.UIElementsModule.dll",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/UnityEngine.UIElementsModule.dll"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/UnityEngine.UIElementsModule.dll"
+      ],
+      "DebugActionIndex": 75
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/Unity.Services.Core.Analytics.dll",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/Unity.Services.Core.Analytics.dll"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/Unity.Services.Core.Analytics.dll"
+      ],
+      "DebugActionIndex": 76
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/UnityEngine.AccessibilityModule.pdb",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/UnityEngine.AccessibilityModule.pdb"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/UnityEngine.AccessibilityModule.pdb"
+      ],
+      "DebugActionIndex": 77
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/System.Drawing.dll",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/System.Drawing.dll"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/System.Drawing.dll"
+      ],
+      "DebugActionIndex": 78
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/UnityEngine.CoreModule.pdb",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/UnityEngine.CoreModule.pdb"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/UnityEngine.CoreModule.pdb"
+      ],
+      "DebugActionIndex": 79
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/UnityEngine.XRModule.dll",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/UnityEngine.XRModule.dll"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/UnityEngine.XRModule.dll"
+      ],
+      "DebugActionIndex": 80
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/UnityEngine.PhysicsModule.dll",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/UnityEngine.PhysicsModule.dll"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/UnityEngine.PhysicsModule.dll"
+      ],
+      "DebugActionIndex": 81
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/UnityEngine.UnityWebRequestModule.dll",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/UnityEngine.UnityWebRequestModule.dll"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/UnityEngine.UnityWebRequestModule.dll"
+      ],
+      "DebugActionIndex": 82
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/netstandard.dll",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/netstandard.dll"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/netstandard.dll"
+      ],
+      "DebugActionIndex": 83
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/Unity.2D.Tilemap.Extras.pdb",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/Unity.2D.Tilemap.Extras.pdb"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/Unity.2D.Tilemap.Extras.pdb"
+      ],
+      "DebugActionIndex": 84
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/System.Net.Http.dll",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/System.Net.Http.dll"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/System.Net.Http.dll"
+      ],
+      "DebugActionIndex": 85
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/UnityEngine.WindModule.dll",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/UnityEngine.WindModule.dll"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/UnityEngine.WindModule.dll"
+      ],
+      "DebugActionIndex": 86
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/UnityEngine.GameCenterModule.dll",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/UnityEngine.GameCenterModule.dll"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/UnityEngine.GameCenterModule.dll"
+      ],
+      "DebugActionIndex": 87
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/UnityEngine.StreamingModule.dll",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/UnityEngine.StreamingModule.dll"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/UnityEngine.StreamingModule.dll"
+      ],
+      "DebugActionIndex": 88
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/Unity.2D.PixelPerfect.dll",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/Unity.2D.PixelPerfect.dll"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/Unity.2D.PixelPerfect.dll"
+      ],
+      "DebugActionIndex": 89
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/System.ComponentModel.Composition.dll",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/System.ComponentModel.Composition.dll"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/System.ComponentModel.Composition.dll"
+      ],
+      "DebugActionIndex": 90
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/Newtonsoft.Json.pdb",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/Newtonsoft.Json.pdb"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/Newtonsoft.Json.pdb"
+      ],
+      "DebugActionIndex": 91
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/Unity.Timeline.pdb",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/Unity.Timeline.pdb"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/Unity.Timeline.pdb"
+      ],
+      "DebugActionIndex": 92
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/UnityEngine.UIModule.dll",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/UnityEngine.UIModule.dll"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/UnityEngine.UIModule.dll"
+      ],
+      "DebugActionIndex": 93
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/Assembly-CSharp.dll",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/Assembly-CSharp.dll"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/Assembly-CSharp.dll"
+      ],
+      "DebugActionIndex": 94
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/UnityEngine.TilemapModule.dll",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/UnityEngine.TilemapModule.dll"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/UnityEngine.TilemapModule.dll"
+      ],
+      "DebugActionIndex": 95
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/UnityEngine.ParticleSystemModule.pdb",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/UnityEngine.ParticleSystemModule.pdb"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/UnityEngine.ParticleSystemModule.pdb"
+      ],
+      "DebugActionIndex": 96
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/UnityEngine.AssetBundleModule.dll",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/UnityEngine.AssetBundleModule.dll"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/UnityEngine.AssetBundleModule.dll"
+      ],
+      "DebugActionIndex": 97
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/UnityEngine.TerrainModule.dll",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/UnityEngine.TerrainModule.dll"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/UnityEngine.TerrainModule.dll"
+      ],
+      "DebugActionIndex": 98
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/UnityEngine.ClothModule.pdb",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/UnityEngine.ClothModule.pdb"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/UnityEngine.ClothModule.pdb"
+      ],
+      "DebugActionIndex": 99
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/UnityEngine.dll",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/UnityEngine.dll"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/UnityEngine.dll"
+      ],
+      "DebugActionIndex": 100
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/UnityEngine.VirtualTexturingModule.dll",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/UnityEngine.VirtualTexturingModule.dll"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/UnityEngine.VirtualTexturingModule.dll"
+      ],
+      "DebugActionIndex": 101
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/Unity.Services.Core.Device.dll",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/Unity.Services.Core.Device.dll"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/Unity.Services.Core.Device.dll"
+      ],
+      "DebugActionIndex": 102
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/UnityEngine.SpriteShapeModule.pdb",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/UnityEngine.SpriteShapeModule.pdb"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/UnityEngine.SpriteShapeModule.pdb"
+      ],
+      "DebugActionIndex": 103
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/Unity.Services.Core.Networking.pdb",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/Unity.Services.Core.Networking.pdb"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/Unity.Services.Core.Networking.pdb"
+      ],
+      "DebugActionIndex": 104
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/UnityEngine.InputModule.dll",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/UnityEngine.InputModule.dll"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/UnityEngine.InputModule.dll"
+      ],
+      "DebugActionIndex": 105
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/Unity.Services.Core.Internal.pdb",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/Unity.Services.Core.Internal.pdb"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/Unity.Services.Core.Internal.pdb"
+      ],
+      "DebugActionIndex": 106
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/UnityEngine.GridModule.dll",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/UnityEngine.GridModule.dll"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/UnityEngine.GridModule.dll"
+      ],
+      "DebugActionIndex": 107
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/UnityEngine.TextCoreTextEngineModule.dll"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll"
+      ],
+      "DebugActionIndex": 108
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/UnityEngine.IMGUIModule.dll",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/UnityEngine.IMGUIModule.dll"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/UnityEngine.IMGUIModule.dll"
+      ],
+      "DebugActionIndex": 109
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/System.Runtime.dll",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/System.Runtime.dll"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/System.Runtime.dll"
+      ],
+      "DebugActionIndex": 110
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/Unity.Timeline.dll",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/Unity.Timeline.dll"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/Unity.Timeline.dll"
+      ],
+      "DebugActionIndex": 111
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/UnityEngine.UnityTestProtocolModule.pdb",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/UnityEngine.UnityTestProtocolModule.pdb"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/UnityEngine.UnityTestProtocolModule.pdb"
+      ],
+      "DebugActionIndex": 112
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/System.IO.Compression.dll",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/System.IO.Compression.dll"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/System.IO.Compression.dll"
+      ],
+      "DebugActionIndex": 113
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/Unity.Services.Core.Threading.pdb",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/Unity.Services.Core.Threading.pdb"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/Unity.Services.Core.Threading.pdb"
+      ],
+      "DebugActionIndex": 114
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/System.ServiceModel.Internals.dll",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/System.ServiceModel.Internals.dll"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/System.ServiceModel.Internals.dll"
+      ],
+      "DebugActionIndex": 115
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/UnityEngine.AnimationModule.dll",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/UnityEngine.AnimationModule.dll"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/UnityEngine.AnimationModule.dll"
+      ],
+      "DebugActionIndex": 116
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll"
+      ],
+      "DebugActionIndex": 117
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/UnityEngine.ScreenCaptureModule.pdb",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/UnityEngine.ScreenCaptureModule.pdb"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/UnityEngine.ScreenCaptureModule.pdb"
+      ],
+      "DebugActionIndex": 118
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/UnityEngine.UnityAnalyticsModule.dll",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/UnityEngine.UnityAnalyticsModule.dll"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/UnityEngine.UnityAnalyticsModule.dll"
+      ],
+      "DebugActionIndex": 119
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/Unity.Services.Core.pdb",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/Unity.Services.Core.pdb"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/Unity.Services.Core.pdb"
+      ],
+      "DebugActionIndex": 120
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/UnityEngine.VFXModule.pdb",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/UnityEngine.VFXModule.pdb"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/UnityEngine.VFXModule.pdb"
+      ],
+      "DebugActionIndex": 121
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/Unity.2D.PixelPerfect.pdb",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/Unity.2D.PixelPerfect.pdb"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/Unity.2D.PixelPerfect.pdb"
+      ],
+      "DebugActionIndex": 122
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/UnityEngine.ParticleSystemModule.dll",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/UnityEngine.ParticleSystemModule.dll"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/UnityEngine.ParticleSystemModule.dll"
+      ],
+      "DebugActionIndex": 123
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/UnityEngine.SubstanceModule.dll",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/UnityEngine.SubstanceModule.dll"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/UnityEngine.SubstanceModule.dll"
+      ],
+      "DebugActionIndex": 124
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/Unity.Services.Core.Configuration.pdb",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/Unity.Services.Core.Configuration.pdb"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/Unity.Services.Core.Configuration.pdb"
+      ],
+      "DebugActionIndex": 125
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/UnityEngine.VRModule.dll",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/UnityEngine.VRModule.dll"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/UnityEngine.VRModule.dll"
+      ],
+      "DebugActionIndex": 126
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/Unity.Services.Core.Scheduler.dll",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/Unity.Services.Core.Scheduler.dll"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/Unity.Services.Core.Scheduler.dll"
+      ],
+      "DebugActionIndex": 127
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/Unity.InternalAPIEngineBridge.001.pdb",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/Unity.InternalAPIEngineBridge.001.pdb"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/Unity.InternalAPIEngineBridge.001.pdb"
+      ],
+      "DebugActionIndex": 128
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/UnityEngine.UnityWebRequestWWWModule.pdb",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/UnityEngine.UnityWebRequestWWWModule.pdb"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/UnityEngine.UnityWebRequestWWWModule.pdb"
+      ],
+      "DebugActionIndex": 129
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/Unity.2D.SpriteShape.Runtime.pdb",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/Unity.2D.SpriteShape.Runtime.pdb"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/Unity.2D.SpriteShape.Runtime.pdb"
+      ],
+      "DebugActionIndex": 130
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/UnityEngine.GridModule.pdb",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/UnityEngine.GridModule.pdb"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/UnityEngine.GridModule.pdb"
+      ],
+      "DebugActionIndex": 131
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/UnityEngine.SpriteShapeModule.dll",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/UnityEngine.SpriteShapeModule.dll"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/UnityEngine.SpriteShapeModule.dll"
+      ],
+      "DebugActionIndex": 132
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/UnityEngine.Physics2DModule.pdb",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/UnityEngine.Physics2DModule.pdb"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/UnityEngine.Physics2DModule.pdb"
+      ],
+      "DebugActionIndex": 133
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/UnityEngine.AudioModule.dll",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/UnityEngine.AudioModule.dll"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/UnityEngine.AudioModule.dll"
+      ],
+      "DebugActionIndex": 134
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/RiptideNetworking.pdb",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/RiptideNetworking.pdb"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/RiptideNetworking.pdb"
+      ],
+      "DebugActionIndex": 135
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/Unity.Services.Core.Environments.dll",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/Unity.Services.Core.Environments.dll"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/Unity.Services.Core.Environments.dll"
+      ],
+      "DebugActionIndex": 136
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/UnityEngine.ScreenCaptureModule.dll",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/UnityEngine.ScreenCaptureModule.dll"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/UnityEngine.ScreenCaptureModule.dll"
+      ],
+      "DebugActionIndex": 137
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/UnityEngine.JSONSerializeModule.dll",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/UnityEngine.JSONSerializeModule.dll"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/UnityEngine.JSONSerializeModule.dll"
+      ],
+      "DebugActionIndex": 138
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/UnityEngine.JSONSerializeModule.pdb",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/UnityEngine.JSONSerializeModule.pdb"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/UnityEngine.JSONSerializeModule.pdb"
+      ],
+      "DebugActionIndex": 139
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/UnityEngine.CoreModule.dll",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/UnityEngine.CoreModule.dll"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/UnityEngine.CoreModule.dll"
+      ],
+      "DebugActionIndex": 140
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/Unity.TextMeshPro.pdb",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/Unity.TextMeshPro.pdb"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/Unity.TextMeshPro.pdb"
+      ],
+      "DebugActionIndex": 141
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/UnityEngine.GIModule.dll",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/UnityEngine.GIModule.dll"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/UnityEngine.GIModule.dll"
+      ],
+      "DebugActionIndex": 142
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/UnityEngine.UnityAnalyticsModule.pdb",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/UnityEngine.UnityAnalyticsModule.pdb"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/UnityEngine.UnityAnalyticsModule.pdb"
+      ],
+      "DebugActionIndex": 143
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/UnityEngine.UIModule.pdb",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/UnityEngine.UIModule.pdb"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/UnityEngine.UIModule.pdb"
+      ],
+      "DebugActionIndex": 144
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/Unity.VisualScripting.Core.dll",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/Unity.VisualScripting.Core.dll"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/Unity.VisualScripting.Core.dll"
+      ],
+      "DebugActionIndex": 145
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/Unity.VisualScripting.State.pdb",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/Unity.VisualScripting.State.pdb"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/Unity.VisualScripting.State.pdb"
+      ],
+      "DebugActionIndex": 146
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/Unity.VisualScripting.Core.pdb",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/Unity.VisualScripting.Core.pdb"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/Unity.VisualScripting.Core.pdb"
+      ],
+      "DebugActionIndex": 147
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/Unity.Burst.dll",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/Unity.Burst.dll"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/Unity.Burst.dll"
+      ],
+      "DebugActionIndex": 148
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/Unity.Services.Core.dll",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/Unity.Services.Core.dll"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/Unity.Services.Core.dll"
+      ],
+      "DebugActionIndex": 149
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/UnityEngine.ClusterInputModule.pdb",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/UnityEngine.ClusterInputModule.pdb"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/UnityEngine.ClusterInputModule.pdb"
+      ],
+      "DebugActionIndex": 150
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/UnityEngine.DirectorModule.pdb",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/UnityEngine.DirectorModule.pdb"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/UnityEngine.DirectorModule.pdb"
+      ],
+      "DebugActionIndex": 151
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/UnityEngine.AssetBundleModule.pdb",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/UnityEngine.AssetBundleModule.pdb"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/UnityEngine.AssetBundleModule.pdb"
+      ],
+      "DebugActionIndex": 152
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/UnityEngine.AnimationModule.pdb",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/UnityEngine.AnimationModule.pdb"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/UnityEngine.AnimationModule.pdb"
+      ],
+      "DebugActionIndex": 153
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/Unity.TextMeshPro.dll",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/Unity.TextMeshPro.dll"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/Unity.TextMeshPro.dll"
+      ],
+      "DebugActionIndex": 154
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/UnityEngine.SubsystemsModule.pdb",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/UnityEngine.SubsystemsModule.pdb"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/UnityEngine.SubsystemsModule.pdb"
+      ],
+      "DebugActionIndex": 155
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/UnityEngine.ImageConversionModule.pdb",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/UnityEngine.ImageConversionModule.pdb"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/UnityEngine.ImageConversionModule.pdb"
+      ],
+      "DebugActionIndex": 156
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/UnityEngine.VirtualTexturingModule.pdb",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/UnityEngine.VirtualTexturingModule.pdb"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/UnityEngine.VirtualTexturingModule.pdb"
+      ],
+      "DebugActionIndex": 157
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/UnityEngine.AudioModule.pdb",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/UnityEngine.AudioModule.pdb"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/UnityEngine.AudioModule.pdb"
+      ],
+      "DebugActionIndex": 158
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/System.Configuration.dll",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/System.Configuration.dll"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/System.Configuration.dll"
+      ],
+      "DebugActionIndex": 159
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/Unity.Burst.pdb",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/Unity.Burst.pdb"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/Unity.Burst.pdb"
+      ],
+      "DebugActionIndex": 160
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/UnityEngine.SpriteMaskModule.pdb",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/UnityEngine.SpriteMaskModule.pdb"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/UnityEngine.SpriteMaskModule.pdb"
+      ],
+      "DebugActionIndex": 161
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/UnityEngine.UnityConnectModule.dll",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/UnityEngine.UnityConnectModule.dll"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/UnityEngine.UnityConnectModule.dll"
+      ],
+      "DebugActionIndex": 162
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/Unity.Services.Core.Registration.pdb",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/Unity.Services.Core.Registration.pdb"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/Unity.Services.Core.Registration.pdb"
+      ],
+      "DebugActionIndex": 163
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/UnityEngine.TextRenderingModule.pdb",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/UnityEngine.TextRenderingModule.pdb"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/UnityEngine.TextRenderingModule.pdb"
+      ],
+      "DebugActionIndex": 164
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/Unity.Mathematics.dll",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/Unity.Mathematics.dll"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/Unity.Mathematics.dll"
+      ],
+      "DebugActionIndex": 165
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/UnityEngine.VehiclesModule.dll",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/UnityEngine.VehiclesModule.dll"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/UnityEngine.VehiclesModule.dll"
+      ],
+      "DebugActionIndex": 166
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/Unity.2D.Tilemap.Extras.dll",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/Unity.2D.Tilemap.Extras.dll"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/Unity.2D.Tilemap.Extras.dll"
+      ],
+      "DebugActionIndex": 167
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/System.Data.dll",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/System.Data.dll"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/System.Data.dll"
+      ],
+      "DebugActionIndex": 168
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/UnityEngine.SubsystemsModule.dll",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/UnityEngine.SubsystemsModule.dll"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/UnityEngine.SubsystemsModule.dll"
+      ],
+      "DebugActionIndex": 169
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/Unity.Burst.Cecil.Rocks.dll",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/Unity.Burst.Cecil.Rocks.dll"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/Unity.Burst.Cecil.Rocks.dll"
+      ],
+      "DebugActionIndex": 170
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/System.EnterpriseServices.dll",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/System.EnterpriseServices.dll"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/System.EnterpriseServices.dll"
+      ],
+      "DebugActionIndex": 171
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll"
+      ],
+      "DebugActionIndex": 172
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/mscorlib.dll",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/mscorlib.dll"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/mscorlib.dll"
+      ],
+      "DebugActionIndex": 173
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/UnityEngine.InputLegacyModule.pdb",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/UnityEngine.InputLegacyModule.pdb"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/UnityEngine.InputLegacyModule.pdb"
+      ],
+      "DebugActionIndex": 174
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/UnityEngine.IMGUIModule.pdb",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/UnityEngine.IMGUIModule.pdb"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/UnityEngine.IMGUIModule.pdb"
+      ],
+      "DebugActionIndex": 175
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/UnityEngine.SharedInternalsModule.pdb",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/UnityEngine.SharedInternalsModule.pdb"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/UnityEngine.SharedInternalsModule.pdb"
+      ],
+      "DebugActionIndex": 176
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/Unity.Burst.Cecil.dll",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/Unity.Burst.Cecil.dll"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/Unity.Burst.Cecil.dll"
+      ],
+      "DebugActionIndex": 177
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/Unity.VisualScripting.Flow.dll",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/Unity.VisualScripting.Flow.dll"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/Unity.VisualScripting.Flow.dll"
+      ],
+      "DebugActionIndex": 178
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/Unity.Services.Core.Configuration.dll",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/Unity.Services.Core.Configuration.dll"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/Unity.Services.Core.Configuration.dll"
+      ],
+      "DebugActionIndex": 179
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/UnityEngine.UnityCurlModule.dll",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/UnityEngine.UnityCurlModule.dll"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/UnityEngine.UnityCurlModule.dll"
+      ],
+      "DebugActionIndex": 180
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/UnityEngine.StreamingModule.pdb",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/UnityEngine.StreamingModule.pdb"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/UnityEngine.StreamingModule.pdb"
+      ],
+      "DebugActionIndex": 181
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/UnityEngine.VideoModule.pdb",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/UnityEngine.VideoModule.pdb"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/UnityEngine.VideoModule.pdb"
+      ],
+      "DebugActionIndex": 182
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/UnityEngine.HotReloadModule.pdb",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/UnityEngine.HotReloadModule.pdb"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/UnityEngine.HotReloadModule.pdb"
+      ],
+      "DebugActionIndex": 183
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/UnityEngine.UnityAnalyticsCommonModule.pdb",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/UnityEngine.UnityAnalyticsCommonModule.pdb"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/UnityEngine.UnityAnalyticsCommonModule.pdb"
+      ],
+      "DebugActionIndex": 184
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/UnityEngine.TextCoreTextEngineModule.pdb",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/UnityEngine.TextCoreTextEngineModule.pdb"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/UnityEngine.TextCoreTextEngineModule.pdb"
+      ],
+      "DebugActionIndex": 185
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/UnityEngine.Physics2DModule.dll",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/UnityEngine.Physics2DModule.dll"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/UnityEngine.Physics2DModule.dll"
+      ],
+      "DebugActionIndex": 186
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/System.Core.dll",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/System.Core.dll"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/System.Core.dll"
+      ],
+      "DebugActionIndex": 187
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/UnityEngine.PerformanceReportingModule.dll",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/UnityEngine.PerformanceReportingModule.dll"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/UnityEngine.PerformanceReportingModule.dll"
+      ],
+      "DebugActionIndex": 188
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/System.Xml.dll",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/System.Xml.dll"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/System.Xml.dll"
+      ],
+      "DebugActionIndex": 189
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/UnityEngine.PerformanceReportingModule.pdb",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/UnityEngine.PerformanceReportingModule.pdb"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/UnityEngine.PerformanceReportingModule.pdb"
+      ],
+      "DebugActionIndex": 190
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/UnityEngine.UnityWebRequestModule.pdb",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/UnityEngine.UnityWebRequestModule.pdb"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/UnityEngine.UnityWebRequestModule.pdb"
+      ],
+      "DebugActionIndex": 191
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.pdb",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.pdb"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.pdb"
+      ],
+      "DebugActionIndex": 192
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/UnityEngine.TilemapModule.pdb",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/UnityEngine.TilemapModule.pdb"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/UnityEngine.TilemapModule.pdb"
+      ],
+      "DebugActionIndex": 193
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/Unity.VisualScripting.Flow.pdb",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/Unity.VisualScripting.Flow.pdb"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/Unity.VisualScripting.Flow.pdb"
+      ],
+      "DebugActionIndex": 194
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/UnityEngine.UNETModule.dll",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/UnityEngine.UNETModule.dll"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/UnityEngine.UNETModule.dll"
+      ],
+      "DebugActionIndex": 195
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/Unity.Mathematics.pdb",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/Unity.Mathematics.pdb"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/Unity.Mathematics.pdb"
+      ],
+      "DebugActionIndex": 196
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/UnityEngine.GIModule.pdb",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/UnityEngine.GIModule.pdb"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/UnityEngine.GIModule.pdb"
+      ],
+      "DebugActionIndex": 197
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/Unity.Services.Core.Networking.dll",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/Unity.Services.Core.Networking.dll"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/Unity.Services.Core.Networking.dll"
+      ],
+      "DebugActionIndex": 198
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/UnityEngine.UIElementsNativeModule.dll",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/UnityEngine.UIElementsNativeModule.dll"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/UnityEngine.UIElementsNativeModule.dll"
+      ],
+      "DebugActionIndex": 199
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/Unity.Burst.Cecil.Pdb.dll",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/Unity.Burst.Cecil.Pdb.dll"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/Unity.Burst.Cecil.Pdb.dll"
+      ],
+      "DebugActionIndex": 200
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/UnityEngine.LocalizationModule.dll",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/UnityEngine.LocalizationModule.dll"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/UnityEngine.LocalizationModule.dll"
+      ],
+      "DebugActionIndex": 201
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/Unity.2D.IK.Runtime.pdb",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/Unity.2D.IK.Runtime.pdb"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/Unity.2D.IK.Runtime.pdb"
+      ],
+      "DebugActionIndex": 202
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/System.Runtime.Serialization.dll",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/System.Runtime.Serialization.dll"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/System.Runtime.Serialization.dll"
+      ],
+      "DebugActionIndex": 203
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/UnityEngine.TextCoreFontEngineModule.dll"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll"
+      ],
+      "DebugActionIndex": 204
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/UnityEngine.DSPGraphModule.dll",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/UnityEngine.DSPGraphModule.dll"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/UnityEngine.DSPGraphModule.dll"
+      ],
+      "DebugActionIndex": 205
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/UnityEngine.WindModule.pdb",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/UnityEngine.WindModule.pdb"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/UnityEngine.WindModule.pdb"
+      ],
+      "DebugActionIndex": 206
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/UnityEngine.UnityAnalyticsCommonModule.dll",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/UnityEngine.UnityAnalyticsCommonModule.dll"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/UnityEngine.UnityAnalyticsCommonModule.dll"
+      ],
+      "DebugActionIndex": 207
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/UnityEngine.VehiclesModule.pdb",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/UnityEngine.VehiclesModule.pdb"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/UnityEngine.VehiclesModule.pdb"
+      ],
+      "DebugActionIndex": 208
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/UnityEngine.AIModule.pdb",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/UnityEngine.AIModule.pdb"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/UnityEngine.AIModule.pdb"
+      ],
+      "DebugActionIndex": 209
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/System.Data.DataSetExtensions.dll",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/System.Data.DataSetExtensions.dll"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/System.Data.DataSetExtensions.dll"
+      ],
+      "DebugActionIndex": 210
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/Unity.Services.Core.Internal.dll",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/Unity.Services.Core.Internal.dll"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/Unity.Services.Core.Internal.dll"
+      ],
+      "DebugActionIndex": 211
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/Newtonsoft.Json.dll",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/Newtonsoft.Json.dll"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/Newtonsoft.Json.dll"
+      ],
+      "DebugActionIndex": 212
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/UnityEngine.VideoModule.dll",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/UnityEngine.VideoModule.dll"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/UnityEngine.VideoModule.dll"
+      ],
+      "DebugActionIndex": 213
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/UnityEngine.InputModule.pdb",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/UnityEngine.InputModule.pdb"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/UnityEngine.InputModule.pdb"
+      ],
+      "DebugActionIndex": 214
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/UnityEngine.TLSModule.pdb",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/UnityEngine.TLSModule.pdb"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/UnityEngine.TLSModule.pdb"
+      ],
+      "DebugActionIndex": 215
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/UnityEngine.SharedInternalsModule.dll",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/UnityEngine.SharedInternalsModule.dll"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/UnityEngine.SharedInternalsModule.dll"
+      ],
+      "DebugActionIndex": 216
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/UnityEngine.UNETModule.pdb",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/UnityEngine.UNETModule.pdb"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/UnityEngine.UNETModule.pdb"
+      ],
+      "DebugActionIndex": 217
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/Assembly-CSharp.pdb",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/Assembly-CSharp.pdb"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/Assembly-CSharp.pdb"
+      ],
+      "DebugActionIndex": 218
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/System.Numerics.dll",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/System.Numerics.dll"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/System.Numerics.dll"
+      ],
+      "DebugActionIndex": 219
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/Unity.2D.Common.Runtime.pdb",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/Unity.2D.Common.Runtime.pdb"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/Unity.2D.Common.Runtime.pdb"
+      ],
+      "DebugActionIndex": 220
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/UnityEngine.UnityWebRequestAudioModule.pdb",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/UnityEngine.UnityWebRequestAudioModule.pdb"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/UnityEngine.UnityWebRequestAudioModule.pdb"
+      ],
+      "DebugActionIndex": 221
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/Unity.Services.Core.Threading.dll",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/Unity.Services.Core.Threading.dll"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/Unity.Services.Core.Threading.dll"
+      ],
+      "DebugActionIndex": 222
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/UnityEngine.pdb",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/UnityEngine.pdb"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/UnityEngine.pdb"
+      ],
+      "DebugActionIndex": 223
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/Unity.VisualScripting.State.dll",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/Unity.VisualScripting.State.dll"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/Unity.VisualScripting.State.dll"
+      ],
+      "DebugActionIndex": 224
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/Unity.Services.Core.Scheduler.pdb",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/Unity.Services.Core.Scheduler.pdb"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/Unity.Services.Core.Scheduler.pdb"
+      ],
+      "DebugActionIndex": 225
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/Unity.Burst.Unsafe.dll",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/Unity.Burst.Unsafe.dll"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/Unity.Burst.Unsafe.dll"
+      ],
+      "DebugActionIndex": 226
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/Unity.2D.Animation.Runtime.dll",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/Unity.2D.Animation.Runtime.dll"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/Unity.2D.Animation.Runtime.dll"
+      ],
+      "DebugActionIndex": 227
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/UnityEngine.UI.dll",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/UnityEngine.UI.dll"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/UnityEngine.UI.dll"
+      ],
+      "DebugActionIndex": 228
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/UnityEngine.LocalizationModule.pdb",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/UnityEngine.LocalizationModule.pdb"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/UnityEngine.LocalizationModule.pdb"
+      ],
+      "DebugActionIndex": 229
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Managed/UnityEngine.UnityCurlModule.pdb",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/UnityEngine.UnityCurlModule.pdb"
+      ],
+      "Outputs": [
+        "Server_Data/Managed/UnityEngine.UnityCurlModule.pdb"
+      ],
+      "DebugActionIndex": 230
+    },
+    {
+      "Annotation": "WriteText Library/Bee/artifacts/LinuxPlayerBuildProgram/Data/app.info",
+      "ActionType": "WriteTextFile",
+      "WriteTextFilePayload": "DefaultCompany\nFishGameServer",
+      "Inputs": [],
+      "Outputs": [
+        "Library/Bee/artifacts/LinuxPlayerBuildProgram/Data/app.info"
+      ],
+      "AllowUnwrittenOutputFiles": true,
+      "DebugActionIndex": 231
+    },
+    {
+      "Annotation": "CopyFiles UnityPlayer.so",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "/home/tomas/Documents/Unity/Hub/Editor/2021.3.14f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/linux64_player_development_mono/UnityPlayer.so"
+      ],
+      "Outputs": [
+        "UnityPlayer.so"
+      ],
+      "DebugActionIndex": 232
+    },
+    {
+      "Annotation": "CopyFiles Server.x86_64",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "/home/tomas/Documents/Unity/Hub/Editor/2021.3.14f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/linux64_player_development_mono/LinuxPlayer"
+      ],
+      "Outputs": [
+        "Server.x86_64"
+      ],
+      "DebugActionIndex": 233
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Resources/unity default resources",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "/home/tomas/Documents/Unity/Hub/Editor/2021.3.14f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/linux64_player_development_mono/Data/Resources/unity default resources"
+      ],
+      "Outputs": [
+        "Server_Data/Resources/unity default resources"
+      ],
+      "DebugActionIndex": 234
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/MonoBleedingEdge/etc/config",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "/home/tomas/Documents/Unity/Hub/Editor/2021.3.14f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/linux64_player_development_mono/Data/MonoBleedingEdge/etc/config"
+      ],
+      "Outputs": [
+        "Server_Data/MonoBleedingEdge/etc/config"
+      ],
+      "DebugActionIndex": 235
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/MonoBleedingEdge/x86_64/libmono-native.so",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "/home/tomas/Documents/Unity/Hub/Editor/2021.3.14f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/linux64_player_development_mono/Data/MonoBleedingEdge/x86_64/libmono-native.so"
+      ],
+      "Outputs": [
+        "Server_Data/MonoBleedingEdge/x86_64/libmono-native.so"
+      ],
+      "DebugActionIndex": 236
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/MonoBleedingEdge/x86_64/libmonobdwgc-2.0.so",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "/home/tomas/Documents/Unity/Hub/Editor/2021.3.14f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/linux64_player_development_mono/Data/MonoBleedingEdge/x86_64/libmonobdwgc-2.0.so"
+      ],
+      "Outputs": [
+        "Server_Data/MonoBleedingEdge/x86_64/libmonobdwgc-2.0.so"
+      ],
+      "DebugActionIndex": 237
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/MonoBleedingEdge/x86_64/libMonoPosixHelper.so",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "/home/tomas/Documents/Unity/Hub/Editor/2021.3.14f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/linux64_player_development_mono/Data/MonoBleedingEdge/x86_64/libMonoPosixHelper.so"
+      ],
+      "Outputs": [
+        "Server_Data/MonoBleedingEdge/x86_64/libMonoPosixHelper.so"
+      ],
+      "DebugActionIndex": 238
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/MonoBleedingEdge/etc/mono/config",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "/home/tomas/Documents/Unity/Hub/Editor/2021.3.14f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/linux64_player_development_mono/Data/MonoBleedingEdge/etc/mono/config"
+      ],
+      "Outputs": [
+        "Server_Data/MonoBleedingEdge/etc/mono/config"
+      ],
+      "DebugActionIndex": 239
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/MonoBleedingEdge/etc/mono/browscap.ini",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "/home/tomas/Documents/Unity/Hub/Editor/2021.3.14f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/linux64_player_development_mono/Data/MonoBleedingEdge/etc/mono/browscap.ini"
+      ],
+      "Outputs": [
+        "Server_Data/MonoBleedingEdge/etc/mono/browscap.ini"
+      ],
+      "DebugActionIndex": 240
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/MonoBleedingEdge/etc/mono/2.0/web.config",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "/home/tomas/Documents/Unity/Hub/Editor/2021.3.14f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/linux64_player_development_mono/Data/MonoBleedingEdge/etc/mono/2.0/web.config"
+      ],
+      "Outputs": [
+        "Server_Data/MonoBleedingEdge/etc/mono/2.0/web.config"
+      ],
+      "DebugActionIndex": 241
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/MonoBleedingEdge/etc/mono/2.0/settings.map",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "/home/tomas/Documents/Unity/Hub/Editor/2021.3.14f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/linux64_player_development_mono/Data/MonoBleedingEdge/etc/mono/2.0/settings.map"
+      ],
+      "Outputs": [
+        "Server_Data/MonoBleedingEdge/etc/mono/2.0/settings.map"
+      ],
+      "DebugActionIndex": 242
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/MonoBleedingEdge/etc/mono/2.0/machine.config",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "/home/tomas/Documents/Unity/Hub/Editor/2021.3.14f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/linux64_player_development_mono/Data/MonoBleedingEdge/etc/mono/2.0/machine.config"
+      ],
+      "Outputs": [
+        "Server_Data/MonoBleedingEdge/etc/mono/2.0/machine.config"
+      ],
+      "DebugActionIndex": 243
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "/home/tomas/Documents/Unity/Hub/Editor/2021.3.14f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/linux64_player_development_mono/Data/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx"
+      ],
+      "Outputs": [
+        "Server_Data/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx"
+      ],
+      "DebugActionIndex": 244
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/MonoBleedingEdge/etc/mono/4.0/web.config",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "/home/tomas/Documents/Unity/Hub/Editor/2021.3.14f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/linux64_player_development_mono/Data/MonoBleedingEdge/etc/mono/4.0/web.config"
+      ],
+      "Outputs": [
+        "Server_Data/MonoBleedingEdge/etc/mono/4.0/web.config"
+      ],
+      "DebugActionIndex": 245
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/MonoBleedingEdge/etc/mono/4.0/settings.map",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "/home/tomas/Documents/Unity/Hub/Editor/2021.3.14f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/linux64_player_development_mono/Data/MonoBleedingEdge/etc/mono/4.0/settings.map"
+      ],
+      "Outputs": [
+        "Server_Data/MonoBleedingEdge/etc/mono/4.0/settings.map"
+      ],
+      "DebugActionIndex": 246
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/MonoBleedingEdge/etc/mono/4.0/machine.config",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "/home/tomas/Documents/Unity/Hub/Editor/2021.3.14f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/linux64_player_development_mono/Data/MonoBleedingEdge/etc/mono/4.0/machine.config"
+      ],
+      "Outputs": [
+        "Server_Data/MonoBleedingEdge/etc/mono/4.0/machine.config"
+      ],
+      "DebugActionIndex": 247
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "/home/tomas/Documents/Unity/Hub/Editor/2021.3.14f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/linux64_player_development_mono/Data/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx"
+      ],
+      "Outputs": [
+        "Server_Data/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx"
+      ],
+      "DebugActionIndex": 248
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/MonoBleedingEdge/etc/mono/4.5/web.config",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "/home/tomas/Documents/Unity/Hub/Editor/2021.3.14f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/linux64_player_development_mono/Data/MonoBleedingEdge/etc/mono/4.5/web.config"
+      ],
+      "Outputs": [
+        "Server_Data/MonoBleedingEdge/etc/mono/4.5/web.config"
+      ],
+      "DebugActionIndex": 249
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/MonoBleedingEdge/etc/mono/4.5/settings.map",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "/home/tomas/Documents/Unity/Hub/Editor/2021.3.14f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/linux64_player_development_mono/Data/MonoBleedingEdge/etc/mono/4.5/settings.map"
+      ],
+      "Outputs": [
+        "Server_Data/MonoBleedingEdge/etc/mono/4.5/settings.map"
+      ],
+      "DebugActionIndex": 250
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/MonoBleedingEdge/etc/mono/4.5/machine.config",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "/home/tomas/Documents/Unity/Hub/Editor/2021.3.14f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/linux64_player_development_mono/Data/MonoBleedingEdge/etc/mono/4.5/machine.config"
+      ],
+      "Outputs": [
+        "Server_Data/MonoBleedingEdge/etc/mono/4.5/machine.config"
+      ],
+      "DebugActionIndex": 251
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "/home/tomas/Documents/Unity/Hub/Editor/2021.3.14f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/linux64_player_development_mono/Data/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx"
+      ],
+      "Outputs": [
+        "Server_Data/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx"
+      ],
+      "DebugActionIndex": 252
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/MonoBleedingEdge/etc/mono/mconfig/config.xml",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "/home/tomas/Documents/Unity/Hub/Editor/2021.3.14f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/linux64_player_development_mono/Data/MonoBleedingEdge/etc/mono/mconfig/config.xml"
+      ],
+      "Outputs": [
+        "Server_Data/MonoBleedingEdge/etc/mono/mconfig/config.xml"
+      ],
+      "DebugActionIndex": 253
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "/home/tomas/Documents/Unity/Hub/Editor/2021.3.14f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/linux64_player_development_mono/Data/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser"
+      ],
+      "Outputs": [
+        "Server_Data/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser"
+      ],
+      "DebugActionIndex": 254
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "/home/tomas/Documents/Unity/Hub/Editor/2021.3.14f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/linux64_player_development_mono/Data/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser"
+      ],
+      "Outputs": [
+        "Server_Data/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser"
+      ],
+      "DebugActionIndex": 255
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "/home/tomas/Documents/Unity/Hub/Editor/2021.3.14f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/linux64_player_development_mono/Data/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser"
+      ],
+      "Outputs": [
+        "Server_Data/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser"
+      ],
+      "DebugActionIndex": 256
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/app.info",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Library/Bee/artifacts/LinuxPlayerBuildProgram/Data/app.info"
+      ],
+      "Outputs": [
+        "Server_Data/app.info"
+      ],
+      "ToBuildDependencies": [
+        231
+      ],
+      "DebugActionIndex": 257
+    },
+    {
+      "Annotation": "CopyFiles Server_Data/Resources/UnityPlayer.png",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "/home/tomas/Documents/Unity/Hub/Editor/2021.3.14f1/Editor/Data/Resources/LargeUnityIcon.png"
+      ],
+      "Outputs": [
+        "Server_Data/Resources/UnityPlayer.png"
+      ],
+      "DebugActionIndex": 258
+    },
+    {
+      "Annotation": "Player",
+      "Action": "",
+      "Inputs": [],
+      "Outputs": [],
+      "ToBuildDependencies": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90,
+        91,
+        92,
+        93,
+        94,
+        95,
+        96,
+        97,
+        98,
+        99,
+        100,
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107,
+        108,
+        109,
+        110,
+        111,
+        112,
+        113,
+        114,
+        115,
+        116,
+        117,
+        118,
+        119,
+        120,
+        121,
+        122,
+        123,
+        124,
+        125,
+        126,
+        127,
+        128,
+        129,
+        130,
+        131,
+        132,
+        133,
+        134,
+        135,
+        136,
+        137,
+        138,
+        139,
+        140,
+        141,
+        142,
+        143,
+        144,
+        145,
+        146,
+        147,
+        148,
+        149,
+        150,
+        151,
+        152,
+        153,
+        154,
+        155,
+        156,
+        157,
+        158,
+        159,
+        160,
+        161,
+        162,
+        163,
+        164,
+        165,
+        166,
+        167,
+        168,
+        169,
+        170,
+        171,
+        172,
+        173,
+        174,
+        175,
+        176,
+        177,
+        178,
+        179,
+        180,
+        181,
+        182,
+        183,
+        184,
+        185,
+        186,
+        187,
+        188,
+        189,
+        190,
+        191,
+        192,
+        193,
+        194,
+        195,
+        196,
+        197,
+        198,
+        199,
+        200,
+        201,
+        202,
+        203,
+        204,
+        205,
+        206,
+        207,
+        208,
+        209,
+        210,
+        211,
+        212,
+        213,
+        214,
+        215,
+        216,
+        217,
+        218,
+        219,
+        220,
+        221,
+        222,
+        223,
+        224,
+        225,
+        226,
+        227,
+        228,
+        229,
+        230,
+        232,
+        233,
+        234,
+        235,
+        236,
+        237,
+        238,
+        239,
+        240,
+        241,
+        242,
+        243,
+        244,
+        245,
+        246,
+        247,
+        248,
+        249,
+        250,
+        251,
+        252,
+        253,
+        254,
+        255,
+        256,
+        257,
+        258
+      ],
+      "AllowUnexpectedOutput": true,
+      "DebugActionIndex": 259
+    }
+  ],
+  "FileSignatures": [
+    {
+      "File": "/home/tomas/Documents/Unity/Hub/Editor/2021.3.14f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/LinuxPlayerBuildProgram.Data.dll"
+    },
+    {
+      "File": "/home/tomas/Documents/Unity/Hub/Editor/2021.3.14f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/LinuxPlayerBuildProgram.exe"
+    },
+    {
+      "File": "/home/tomas/Documents/Unity/Hub/Editor/2021.3.14f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll"
+    },
+    {
+      "File": "/home/tomas/Documents/Unity/Hub/Editor/2021.3.14f1/Editor/Data/Tools/BuildPipeline/Bee.BuildTools.dll"
+    },
+    {
+      "File": "/home/tomas/Documents/Unity/Hub/Editor/2021.3.14f1/Editor/Data/Tools/BuildPipeline/Bee.CSharpSupport.dll"
+    },
+    {
+      "File": "/home/tomas/Documents/Unity/Hub/Editor/2021.3.14f1/Editor/Data/Tools/BuildPipeline/Bee.Core.dll"
+    },
+    {
+      "File": "/home/tomas/Documents/Unity/Hub/Editor/2021.3.14f1/Editor/Data/Tools/BuildPipeline/Bee.DotNet.dll"
+    },
+    {
+      "File": "/home/tomas/Documents/Unity/Hub/Editor/2021.3.14f1/Editor/Data/Tools/BuildPipeline/Bee.NativeProgramSupport.dll"
+    },
+    {
+      "File": "/home/tomas/Documents/Unity/Hub/Editor/2021.3.14f1/Editor/Data/Tools/BuildPipeline/Bee.Stevedore.Program.exe"
+    },
+    {
+      "File": "/home/tomas/Documents/Unity/Hub/Editor/2021.3.14f1/Editor/Data/Tools/BuildPipeline/Bee.TinyProfiler2.dll"
+    },
+    {
+      "File": "/home/tomas/Documents/Unity/Hub/Editor/2021.3.14f1/Editor/Data/Tools/BuildPipeline/Bee.Toolchain.GNU.dll"
+    },
+    {
+      "File": "/home/tomas/Documents/Unity/Hub/Editor/2021.3.14f1/Editor/Data/Tools/BuildPipeline/Bee.Toolchain.LLVM.dll"
+    },
+    {
+      "File": "/home/tomas/Documents/Unity/Hub/Editor/2021.3.14f1/Editor/Data/Tools/BuildPipeline/Bee.Toolchain.VisualStudio.dll"
+    },
+    {
+      "File": "/home/tomas/Documents/Unity/Hub/Editor/2021.3.14f1/Editor/Data/Tools/BuildPipeline/Bee.Toolchain.Xcode.dll"
+    },
+    {
+      "File": "/home/tomas/Documents/Unity/Hub/Editor/2021.3.14f1/Editor/Data/Tools/BuildPipeline/Bee.Tools.dll"
+    },
+    {
+      "File": "/home/tomas/Documents/Unity/Hub/Editor/2021.3.14f1/Editor/Data/Tools/BuildPipeline/Bee.TundraBackend.dll"
+    },
+    {
+      "File": "/home/tomas/Documents/Unity/Hub/Editor/2021.3.14f1/Editor/Data/Tools/BuildPipeline/Bee.VisualStudioSolution.dll"
+    },
+    {
+      "File": "/home/tomas/Documents/Unity/Hub/Editor/2021.3.14f1/Editor/Data/Tools/BuildPipeline/BeeBuildProgramCommon.Data.dll"
+    },
+    {
+      "File": "/home/tomas/Documents/Unity/Hub/Editor/2021.3.14f1/Editor/Data/Tools/BuildPipeline/BeeBuildProgramCommon.dll"
+    },
+    {
+      "File": "/home/tomas/Documents/Unity/Hub/Editor/2021.3.14f1/Editor/Data/Tools/BuildPipeline/ClassRegistrationGenerator.exe"
+    },
+    {
+      "File": "/home/tomas/Documents/Unity/Hub/Editor/2021.3.14f1/Editor/Data/Tools/BuildPipeline/Newtonsoft.Json.dll"
+    },
+    {
+      "File": "/home/tomas/Documents/Unity/Hub/Editor/2021.3.14f1/Editor/Data/Tools/BuildPipeline/NiceIO.dll"
+    },
+    {
+      "File": "/home/tomas/Documents/Unity/Hub/Editor/2021.3.14f1/Editor/Data/Tools/BuildPipeline/PlayerBuildProgramLibrary.Data.dll"
+    },
+    {
+      "File": "/home/tomas/Documents/Unity/Hub/Editor/2021.3.14f1/Editor/Data/Tools/BuildPipeline/PlayerBuildProgramLibrary.dll"
+    },
+    {
+      "File": "/home/tomas/Documents/Unity/Hub/Editor/2021.3.14f1/Editor/Data/Tools/BuildPipeline/ScriptCompilationBuildProgram.Data.dll"
+    },
+    {
+      "File": "/home/tomas/Documents/Unity/Hub/Editor/2021.3.14f1/Editor/Data/Tools/BuildPipeline/ScriptCompilationBuildProgram.exe"
+    },
+    {
+      "File": "/home/tomas/Documents/Unity/Hub/Editor/2021.3.14f1/Editor/Data/Tools/BuildPipeline/SharpYaml.dll"
+    },
+    {
+      "File": "/home/tomas/Documents/Unity/Hub/Editor/2021.3.14f1/Editor/Data/Tools/BuildPipeline/Unity.Api.Attributes.dll"
+    },
+    {
+      "File": "/home/tomas/Documents/Unity/Hub/Editor/2021.3.14f1/Editor/Data/Tools/BuildPipeline/Unity.Cecil.Mdb.dll"
+    },
+    {
+      "File": "/home/tomas/Documents/Unity/Hub/Editor/2021.3.14f1/Editor/Data/Tools/BuildPipeline/Unity.Cecil.Pdb.dll"
+    },
+    {
+      "File": "/home/tomas/Documents/Unity/Hub/Editor/2021.3.14f1/Editor/Data/Tools/BuildPipeline/Unity.Cecil.Rocks.dll"
+    },
+    {
+      "File": "/home/tomas/Documents/Unity/Hub/Editor/2021.3.14f1/Editor/Data/Tools/BuildPipeline/Unity.Cecil.dll"
+    },
+    {
+      "File": "/home/tomas/Documents/Unity/Hub/Editor/2021.3.14f1/Editor/Data/Tools/BuildPipeline/Unity.IL2CPP.Api.dll"
+    },
+    {
+      "File": "/home/tomas/Documents/Unity/Hub/Editor/2021.3.14f1/Editor/Data/Tools/BuildPipeline/Unity.IL2CPP.Bee.BuildLogic.dll"
+    },
+    {
+      "File": "/home/tomas/Documents/Unity/Hub/Editor/2021.3.14f1/Editor/Data/Tools/BuildPipeline/Unity.IL2CPP.Bee.IL2CPPExeCompileCppBuildProgram.Data.dll"
+    },
+    {
+      "File": "/home/tomas/Documents/Unity/Hub/Editor/2021.3.14f1/Editor/Data/Tools/BuildPipeline/Unity.Linker.Api.dll"
+    },
+    {
+      "File": "/home/tomas/Documents/Unity/Hub/Editor/2021.3.14f1/Editor/Data/Tools/BuildPipeline/Unity.Options.dll"
+    },
+    {
+      "File": "Library/Bee/Player7e63ce68-inputdata.json"
+    }
+  ],
+  "StatSignatures": [
+    {
+      "File": "/home/tomas/Documents/Unity/Hub/Editor/2021.3.14f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport"
+    },
+    {
+      "File": "/home/tomas/Documents/Unity/Hub/Editor/2021.3.14f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/linux64_player_development_mono/Data/MonoBleedingEdge"
+    },
+    {
+      "File": "/home/tomas/Documents/Unity/Hub/Editor/2021.3.14f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/linux64_player_development_mono/Data/Resources"
+    },
+    {
+      "File": "Library/Bee/Player7e63ce68-inputdata.json"
+    },
+    {
+      "File": "Temp/StagingArea/Data/Plugins/lib_burst_generated.so"
+    },
+    {
+      "File": "Temp/StagingArea/UnityPlayer.png"
+    }
+  ],
+  "GlobSignatures": [
+    {
+      "Path": "/home/tomas/Documents/Unity/Hub/Editor/2021.3.14f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport"
+    },
+    {
+      "Path": "/home/tomas/Documents/Unity/Hub/Editor/2021.3.14f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/linux64_player_development_mono/Data/MonoBleedingEdge",
+      "Recurse": 1
+    },
+    {
+      "Path": "/home/tomas/Documents/Unity/Hub/Editor/2021.3.14f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/linux64_player_development_mono/Data/Resources",
+      "Recurse": 1
+    },
+    {
+      "Path": "/home/tomas/Documents/Unity/Hub/Editor/2021.3.14f1/Editor/Data/Tools/BuildPipeline"
+    },
+    {
+      "Path": "Assets/StreamingAssets",
+      "Recurse": 1
+    },
+    {
+      "Path": "Library/PlayerDataCache/Linux64/Data",
+      "Recurse": 1
+    },
+    {
+      "Path": "Temp/StagingArea/Data/Managed"
+    },
+    {
+      "Path": "Temp/StagingArea/Data/Plugins"
+    },
+    {
+      "Path": "Temp/StagingArea/Data/UnitySubsystems",
+      "Recurse": 1
+    }
+  ],
+  "ContentDigestExtensions": [
+    ".rsp",
+    ".dll",
+    ".exe",
+    ".winmd",
+    ".pdb",
+    ".cpp",
+    ".cc",
+    ".c",
+    ".hpp",
+    ".h",
+    ".json",
+    ".xml",
+    ".txt",
+    ".config"
+  ],
+  "StructuredLogFileName": "Library/Bee/tundra.log.json",
+  "StateFileName": "Library/Bee/TundraBuildState.state",
+  "StateFileNameTmp": "Library/Bee/TundraBuildState.state.tmp",
+  "StateFileNameMapped": "Library/Bee/TundraBuildState.state.map",
+  "ScanCacheFileName": "Library/Bee/tundra.scancache",
+  "ScanCacheFileNameTmp": "Library/Bee/tundra.scancache.tmp",
+  "DigestCacheFileName": "Library/Bee/tundra.digestcache",
+  "DigestCacheFileNameTmp": "Library/Bee/tundra.digestcache.tmp",
+  "EmitDataForBeeWhy": 0,
+        "NamedNodes": {
+          "all_tundra_nodes": 0,
+          "Player": 259
+        }
+,  "DefaultNodes": [
+    0
+  ],
+  "SharedResources": [],
+  "Scanners": [],
+  "Identifier": "Library/Bee/Player7e63ce68.dag.json",
+  "RelativePathToRoot": "../.."
+}
