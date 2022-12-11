@@ -341,6 +341,7 @@
 -r:"/home/tomas/Documents/Unity/Hub/Editor/2021.3.14f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Xml.XmlSerializer.dll"
 -r:"/home/tomas/Documents/Unity/Hub/Editor/2021.3.14f1/Editor/Data/NetStandard/ref/2.1.0/netstandard.dll"
 -r:"/home/tomas/Documents/Unity/Hub/Editor/2021.3.14f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll"
+-r:"/home/tomas/Documents/Unity/Hub/Editor/2021.3.14f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll"
 -r:"Library/Bee/artifacts/2400b0aE.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/2400b0aE.dag/UnityEngine.UI.ref.dll"
 "Library/PackageCache/com.unity.2d.animation@7.0.8/IK/Runtime/AssemblyInfo.cs"

@@ -103,6 +103,7 @@ Library: lib_burst_generated
 --compilation-defines=NETSTANDARD2_1
 --compilation-defines=DEVELOPMENT_BUILD
 --compilation-defines=ENABLE_PROFILER
+--compilation-defines=UNITY_SERVER
 --compilation-defines=DEBUG
 --compilation-defines=TRACE
 --compilation-defines=UNITY_ASSERTIONS
@@ -135,6 +136,7 @@ Library: lib_burst_generated
 --root-assembly=/home/tomas/Documents/Unity/FishGame/FishGameServer/Temp/StagingArea/Data/Managed/UnityEngine.UI.dll
 --root-assembly=/home/tomas/Documents/Unity/FishGame/FishGameServer/Temp/StagingArea/Data/Managed/Unity.VisualScripting.Flow.dll
 --root-assembly=/home/tomas/Documents/Unity/FishGame/FishGameServer/Temp/StagingArea/Data/Managed/Unity.Mathematics.dll
+--root-assembly=/home/tomas/Documents/Unity/FishGame/FishGameServer/Temp/StagingArea/Data/Managed/RiptideNetworking.dll
 --root-assembly=/home/tomas/Documents/Unity/FishGame/FishGameServer/Temp/StagingArea/Data/Managed/Unity.Services.Core.Telemetry.dll
 --root-assembly=/home/tomas/Documents/Unity/FishGame/FishGameServer/Temp/StagingArea/Data/Managed/Unity.VisualScripting.State.dll
 --root-assembly=/home/tomas/Documents/Unity/FishGame/FishGameServer/Temp/StagingArea/Data/Managed/Unity.VisualScripting.Core.dll
@@ -160,7 +162,6 @@ Library: lib_burst_generated
 --root-assembly=/home/tomas/Documents/Unity/FishGame/FishGameServer/Temp/StagingArea/Data/Managed/Unity.Services.Core.Networking.dll
 --root-assembly=/home/tomas/Documents/Unity/FishGame/FishGameServer/Temp/StagingArea/Data/Managed/Unity.InternalAPIEngineBridge.001.dll
 --root-assembly=/home/tomas/Documents/Unity/FishGame/FishGameServer/Temp/StagingArea/Data/Managed/Unity.Services.Core.Configuration.dll
---root-assembly=/home/tomas/Documents/Unity/FishGame/FishGameServer/Temp/StagingArea/Data/Managed/RiptideNetworking.dll
 --assembly-folder=/home/tomas/Documents/Unity/FishGame/FishGameServer/Temp/StagingArea/Data/Managed/
 --pdb-search-paths=Temp/ManagedSymbols/
 --method=Unity.Burst.BurstCompiler+BurstCompilerHelper, Unity.Burst, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null::IsBurstEnabled()--8c2be93e18276203cbd918daa2748a10
@@ -272,6 +273,7 @@ Library: lib_burst_generated
 --compilation-defines=NETSTANDARD2_1
 --compilation-defines=DEVELOPMENT_BUILD
 --compilation-defines=ENABLE_PROFILER
+--compilation-defines=UNITY_SERVER
 --compilation-defines=DEBUG
 --compilation-defines=TRACE
 --compilation-defines=UNITY_ASSERTIONS
@@ -304,6 +306,7 @@ Library: lib_burst_generated
 --root-assembly=/home/tomas/Documents/Unity/FishGame/FishGameServer/Temp/StagingArea/Data/Managed/UnityEngine.UI.dll
 --root-assembly=/home/tomas/Documents/Unity/FishGame/FishGameServer/Temp/StagingArea/Data/Managed/Unity.VisualScripting.Flow.dll
 --root-assembly=/home/tomas/Documents/Unity/FishGame/FishGameServer/Temp/StagingArea/Data/Managed/Unity.Mathematics.dll
+--root-assembly=/home/tomas/Documents/Unity/FishGame/FishGameServer/Temp/StagingArea/Data/Managed/RiptideNetworking.dll
 --root-assembly=/home/tomas/Documents/Unity/FishGame/FishGameServer/Temp/StagingArea/Data/Managed/Unity.Services.Core.Telemetry.dll
 --root-assembly=/home/tomas/Documents/Unity/FishGame/FishGameServer/Temp/StagingArea/Data/Managed/Unity.VisualScripting.State.dll
 --root-assembly=/home/tomas/Documents/Unity/FishGame/FishGameServer/Temp/StagingArea/Data/Managed/Unity.VisualScripting.Core.dll
@@ -329,7 +332,6 @@ Library: lib_burst_generated
 --root-assembly=/home/tomas/Documents/Unity/FishGame/FishGameServer/Temp/StagingArea/Data/Managed/Unity.Services.Core.Networking.dll
 --root-assembly=/home/tomas/Documents/Unity/FishGame/FishGameServer/Temp/StagingArea/Data/Managed/Unity.InternalAPIEngineBridge.001.dll
 --root-assembly=/home/tomas/Documents/Unity/FishGame/FishGameServer/Temp/StagingArea/Data/Managed/Unity.Services.Core.Configuration.dll
---root-assembly=/home/tomas/Documents/Unity/FishGame/FishGameServer/Temp/StagingArea/Data/Managed/RiptideNetworking.dll
 --assembly-folder=/home/tomas/Documents/Unity/FishGame/FishGameServer/Temp/StagingArea/Data/Managed/
 --pdb-search-paths=Temp/ManagedSymbols/
 --method=Unity.Burst.BurstCompiler+BurstCompilerHelper, Unity.Burst, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null::IsBurstEnabled()--8c2be93e18276203cbd918daa2748a10

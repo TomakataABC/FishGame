@@ -273,7 +273,7 @@
       "Annotation": "CopyFiles Server_Data/level0",
       "ActionType": "CopyFiles",
       "Inputs": [
-        "Library/PlayerDataCache/Linux64/Data/level0"
+        "Library/PlayerDataCache/Linux641/Data/level0"
       ],
       "Outputs": [
         "Server_Data/level0"
@@ -284,7 +284,7 @@
       "Annotation": "CopyFiles Server_Data/RuntimeInitializeOnLoads.json",
       "ActionType": "CopyFiles",
       "Inputs": [
-        "Library/PlayerDataCache/Linux64/Data/RuntimeInitializeOnLoads.json"
+        "Library/PlayerDataCache/Linux641/Data/RuntimeInitializeOnLoads.json"
       ],
       "Outputs": [
         "Server_Data/RuntimeInitializeOnLoads.json"
@@ -295,7 +295,7 @@
       "Annotation": "CopyFiles Server_Data/ScriptingAssemblies.json",
       "ActionType": "CopyFiles",
       "Inputs": [
-        "Library/PlayerDataCache/Linux64/Data/ScriptingAssemblies.json"
+        "Library/PlayerDataCache/Linux641/Data/ScriptingAssemblies.json"
       ],
       "Outputs": [
         "Server_Data/ScriptingAssemblies.json"
@@ -306,7 +306,7 @@
       "Annotation": "CopyFiles Server_Data/globalgamemanagers.assets",
       "ActionType": "CopyFiles",
       "Inputs": [
-        "Library/PlayerDataCache/Linux64/Data/globalgamemanagers.assets"
+        "Library/PlayerDataCache/Linux641/Data/globalgamemanagers.assets"
       ],
       "Outputs": [
         "Server_Data/globalgamemanagers.assets"
@@ -317,7 +317,7 @@
       "Annotation": "CopyFiles Server_Data/globalgamemanagers",
       "ActionType": "CopyFiles",
       "Inputs": [
-        "Library/PlayerDataCache/Linux64/Data/globalgamemanagers"
+        "Library/PlayerDataCache/Linux641/Data/globalgamemanagers"
       ],
       "Outputs": [
         "Server_Data/globalgamemanagers"
@@ -328,7 +328,7 @@
       "Annotation": "CopyFiles Server_Data/sharedassets0.assets",
       "ActionType": "CopyFiles",
       "Inputs": [
-        "Library/PlayerDataCache/Linux64/Data/sharedassets0.assets"
+        "Library/PlayerDataCache/Linux641/Data/sharedassets0.assets"
       ],
       "Outputs": [
         "Server_Data/sharedassets0.assets"
@@ -339,7 +339,7 @@
       "Annotation": "CopyFiles Server_Data/boot.config",
       "ActionType": "CopyFiles",
       "Inputs": [
-        "Library/PlayerDataCache/Linux64/Data/boot.config"
+        "Library/PlayerDataCache/Linux641/Data/boot.config"
       ],
       "Outputs": [
         "Server_Data/boot.config"
@@ -350,7 +350,7 @@
       "Annotation": "CopyFiles Server_Data/Resources/unity_builtin_extra",
       "ActionType": "CopyFiles",
       "Inputs": [
-        "Library/PlayerDataCache/Linux64/Data/Resources/unity_builtin_extra"
+        "Library/PlayerDataCache/Linux641/Data/Resources/unity_builtin_extra"
       ],
       "Outputs": [
         "Server_Data/Resources/unity_builtin_extra"
@@ -2814,7 +2814,7 @@
       "Annotation": "CopyFiles UnityPlayer.so",
       "ActionType": "CopyFiles",
       "Inputs": [
-        "/home/tomas/Documents/Unity/Hub/Editor/2021.3.14f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/linux64_player_development_mono/UnityPlayer.so"
+        "/home/tomas/Documents/Unity/Hub/Editor/2021.3.14f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/linux64_server_development_mono/UnityPlayer.so"
       ],
       "Outputs": [
         "UnityPlayer.so"
@@ -2825,7 +2825,7 @@
       "Annotation": "CopyFiles Server.x86_64",
       "ActionType": "CopyFiles",
       "Inputs": [
-        "/home/tomas/Documents/Unity/Hub/Editor/2021.3.14f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/linux64_player_development_mono/LinuxPlayer"
+        "/home/tomas/Documents/Unity/Hub/Editor/2021.3.14f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/linux64_server_development_mono/LinuxPlayer"
       ],
       "Outputs": [
         "Server.x86_64"
@@ -2836,7 +2836,7 @@
       "Annotation": "CopyFiles Server_Data/Resources/unity default resources",
       "ActionType": "CopyFiles",
       "Inputs": [
-        "/home/tomas/Documents/Unity/Hub/Editor/2021.3.14f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/linux64_player_development_mono/Data/Resources/unity default resources"
+        "/home/tomas/Documents/Unity/Hub/Editor/2021.3.14f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/linux64_server_development_mono/Data/Resources/unity default resources"
       ],
       "Outputs": [
         "Server_Data/Resources/unity default resources"
@@ -2847,7 +2847,7 @@
       "Annotation": "CopyFiles Server_Data/MonoBleedingEdge/etc/config",
       "ActionType": "CopyFiles",
       "Inputs": [
-        "/home/tomas/Documents/Unity/Hub/Editor/2021.3.14f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/linux64_player_development_mono/Data/MonoBleedingEdge/etc/config"
+        "/home/tomas/Documents/Unity/Hub/Editor/2021.3.14f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/linux64_server_development_mono/Data/MonoBleedingEdge/etc/config"
       ],
       "Outputs": [
         "Server_Data/MonoBleedingEdge/etc/config"
@@ -2858,7 +2858,7 @@
       "Annotation": "CopyFiles Server_Data/MonoBleedingEdge/x86_64/libmono-native.so",
       "ActionType": "CopyFiles",
       "Inputs": [
-        "/home/tomas/Documents/Unity/Hub/Editor/2021.3.14f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/linux64_player_development_mono/Data/MonoBleedingEdge/x86_64/libmono-native.so"
+        "/home/tomas/Documents/Unity/Hub/Editor/2021.3.14f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/linux64_server_development_mono/Data/MonoBleedingEdge/x86_64/libmono-native.so"
       ],
       "Outputs": [
         "Server_Data/MonoBleedingEdge/x86_64/libmono-native.so"
@@ -2869,7 +2869,7 @@
       "Annotation": "CopyFiles Server_Data/MonoBleedingEdge/x86_64/libmonobdwgc-2.0.so",
       "ActionType": "CopyFiles",
       "Inputs": [
-        "/home/tomas/Documents/Unity/Hub/Editor/2021.3.14f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/linux64_player_development_mono/Data/MonoBleedingEdge/x86_64/libmonobdwgc-2.0.so"
+        "/home/tomas/Documents/Unity/Hub/Editor/2021.3.14f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/linux64_server_development_mono/Data/MonoBleedingEdge/x86_64/libmonobdwgc-2.0.so"
       ],
       "Outputs": [
         "Server_Data/MonoBleedingEdge/x86_64/libmonobdwgc-2.0.so"
@@ -2880,7 +2880,7 @@
       "Annotation": "CopyFiles Server_Data/MonoBleedingEdge/x86_64/libMonoPosixHelper.so",
       "ActionType": "CopyFiles",
       "Inputs": [
-        "/home/tomas/Documents/Unity/Hub/Editor/2021.3.14f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/linux64_player_development_mono/Data/MonoBleedingEdge/x86_64/libMonoPosixHelper.so"
+        "/home/tomas/Documents/Unity/Hub/Editor/2021.3.14f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/linux64_server_development_mono/Data/MonoBleedingEdge/x86_64/libMonoPosixHelper.so"
       ],
       "Outputs": [
         "Server_Data/MonoBleedingEdge/x86_64/libMonoPosixHelper.so"
@@ -2891,7 +2891,7 @@
       "Annotation": "CopyFiles Server_Data/MonoBleedingEdge/etc/mono/config",
       "ActionType": "CopyFiles",
       "Inputs": [
-        "/home/tomas/Documents/Unity/Hub/Editor/2021.3.14f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/linux64_player_development_mono/Data/MonoBleedingEdge/etc/mono/config"
+        "/home/tomas/Documents/Unity/Hub/Editor/2021.3.14f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/linux64_server_development_mono/Data/MonoBleedingEdge/etc/mono/config"
       ],
       "Outputs": [
         "Server_Data/MonoBleedingEdge/etc/mono/config"
@@ -2902,7 +2902,7 @@
       "Annotation": "CopyFiles Server_Data/MonoBleedingEdge/etc/mono/browscap.ini",
       "ActionType": "CopyFiles",
       "Inputs": [
-        "/home/tomas/Documents/Unity/Hub/Editor/2021.3.14f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/linux64_player_development_mono/Data/MonoBleedingEdge/etc/mono/browscap.ini"
+        "/home/tomas/Documents/Unity/Hub/Editor/2021.3.14f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/linux64_server_development_mono/Data/MonoBleedingEdge/etc/mono/browscap.ini"
       ],
       "Outputs": [
         "Server_Data/MonoBleedingEdge/etc/mono/browscap.ini"
@@ -2913,7 +2913,7 @@
       "Annotation": "CopyFiles Server_Data/MonoBleedingEdge/etc/mono/2.0/web.config",
       "ActionType": "CopyFiles",
       "Inputs": [
-        "/home/tomas/Documents/Unity/Hub/Editor/2021.3.14f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/linux64_player_development_mono/Data/MonoBleedingEdge/etc/mono/2.0/web.config"
+        "/home/tomas/Documents/Unity/Hub/Editor/2021.3.14f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/linux64_server_development_mono/Data/MonoBleedingEdge/etc/mono/2.0/web.config"
       ],
       "Outputs": [
         "Server_Data/MonoBleedingEdge/etc/mono/2.0/web.config"
@@ -2924,7 +2924,7 @@
       "Annotation": "CopyFiles Server_Data/MonoBleedingEdge/etc/mono/2.0/settings.map",
       "ActionType": "CopyFiles",
       "Inputs": [
-        "/home/tomas/Documents/Unity/Hub/Editor/2021.3.14f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/linux64_player_development_mono/Data/MonoBleedingEdge/etc/mono/2.0/settings.map"
+        "/home/tomas/Documents/Unity/Hub/Editor/2021.3.14f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/linux64_server_development_mono/Data/MonoBleedingEdge/etc/mono/2.0/settings.map"
       ],
       "Outputs": [
         "Server_Data/MonoBleedingEdge/etc/mono/2.0/settings.map"
@@ -2935,7 +2935,7 @@
       "Annotation": "CopyFiles Server_Data/MonoBleedingEdge/etc/mono/2.0/machine.config",
       "ActionType": "CopyFiles",
       "Inputs": [
-        "/home/tomas/Documents/Unity/Hub/Editor/2021.3.14f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/linux64_player_development_mono/Data/MonoBleedingEdge/etc/mono/2.0/machine.config"
+        "/home/tomas/Documents/Unity/Hub/Editor/2021.3.14f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/linux64_server_development_mono/Data/MonoBleedingEdge/etc/mono/2.0/machine.config"
       ],
       "Outputs": [
         "Server_Data/MonoBleedingEdge/etc/mono/2.0/machine.config"
@@ -2946,7 +2946,7 @@
       "Annotation": "CopyFiles Server_Data/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx",
       "ActionType": "CopyFiles",
       "Inputs": [
-        "/home/tomas/Documents/Unity/Hub/Editor/2021.3.14f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/linux64_player_development_mono/Data/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx"
+        "/home/tomas/Documents/Unity/Hub/Editor/2021.3.14f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/linux64_server_development_mono/Data/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx"
       ],
       "Outputs": [
         "Server_Data/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx"
@@ -2957,7 +2957,7 @@
       "Annotation": "CopyFiles Server_Data/MonoBleedingEdge/etc/mono/4.0/web.config",
       "ActionType": "CopyFiles",
       "Inputs": [
-        "/home/tomas/Documents/Unity/Hub/Editor/2021.3.14f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/linux64_player_development_mono/Data/MonoBleedingEdge/etc/mono/4.0/web.config"
+        "/home/tomas/Documents/Unity/Hub/Editor/2021.3.14f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/linux64_server_development_mono/Data/MonoBleedingEdge/etc/mono/4.0/web.config"
       ],
       "Outputs": [
         "Server_Data/MonoBleedingEdge/etc/mono/4.0/web.config"
@@ -2968,7 +2968,7 @@
       "Annotation": "CopyFiles Server_Data/MonoBleedingEdge/etc/mono/4.0/settings.map",
       "ActionType": "CopyFiles",
       "Inputs": [
-        "/home/tomas/Documents/Unity/Hub/Editor/2021.3.14f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/linux64_player_development_mono/Data/MonoBleedingEdge/etc/mono/4.0/settings.map"
+        "/home/tomas/Documents/Unity/Hub/Editor/2021.3.14f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/linux64_server_development_mono/Data/MonoBleedingEdge/etc/mono/4.0/settings.map"
       ],
       "Outputs": [
         "Server_Data/MonoBleedingEdge/etc/mono/4.0/settings.map"
@@ -2979,7 +2979,7 @@
       "Annotation": "CopyFiles Server_Data/MonoBleedingEdge/etc/mono/4.0/machine.config",
       "ActionType": "CopyFiles",
       "Inputs": [
-        "/home/tomas/Documents/Unity/Hub/Editor/2021.3.14f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/linux64_player_development_mono/Data/MonoBleedingEdge/etc/mono/4.0/machine.config"
+        "/home/tomas/Documents/Unity/Hub/Editor/2021.3.14f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/linux64_server_development_mono/Data/MonoBleedingEdge/etc/mono/4.0/machine.config"
       ],
       "Outputs": [
         "Server_Data/MonoBleedingEdge/etc/mono/4.0/machine.config"
@@ -2990,7 +2990,7 @@
       "Annotation": "CopyFiles Server_Data/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx",
       "ActionType": "CopyFiles",
       "Inputs": [
-        "/home/tomas/Documents/Unity/Hub/Editor/2021.3.14f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/linux64_player_development_mono/Data/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx"
+        "/home/tomas/Documents/Unity/Hub/Editor/2021.3.14f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/linux64_server_development_mono/Data/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx"
       ],
       "Outputs": [
         "Server_Data/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx"
@@ -3001,7 +3001,7 @@
       "Annotation": "CopyFiles Server_Data/MonoBleedingEdge/etc/mono/4.5/web.config",
       "ActionType": "CopyFiles",
       "Inputs": [
-        "/home/tomas/Documents/Unity/Hub/Editor/2021.3.14f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/linux64_player_development_mono/Data/MonoBleedingEdge/etc/mono/4.5/web.config"
+        "/home/tomas/Documents/Unity/Hub/Editor/2021.3.14f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/linux64_server_development_mono/Data/MonoBleedingEdge/etc/mono/4.5/web.config"
       ],
       "Outputs": [
         "Server_Data/MonoBleedingEdge/etc/mono/4.5/web.config"
@@ -3012,7 +3012,7 @@
       "Annotation": "CopyFiles Server_Data/MonoBleedingEdge/etc/mono/4.5/settings.map",
       "ActionType": "CopyFiles",
       "Inputs": [
-        "/home/tomas/Documents/Unity/Hub/Editor/2021.3.14f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/linux64_player_development_mono/Data/MonoBleedingEdge/etc/mono/4.5/settings.map"
+        "/home/tomas/Documents/Unity/Hub/Editor/2021.3.14f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/linux64_server_development_mono/Data/MonoBleedingEdge/etc/mono/4.5/settings.map"
       ],
       "Outputs": [
         "Server_Data/MonoBleedingEdge/etc/mono/4.5/settings.map"
@@ -3023,7 +3023,7 @@
       "Annotation": "CopyFiles Server_Data/MonoBleedingEdge/etc/mono/4.5/machine.config",
       "ActionType": "CopyFiles",
       "Inputs": [
-        "/home/tomas/Documents/Unity/Hub/Editor/2021.3.14f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/linux64_player_development_mono/Data/MonoBleedingEdge/etc/mono/4.5/machine.config"
+        "/home/tomas/Documents/Unity/Hub/Editor/2021.3.14f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/linux64_server_development_mono/Data/MonoBleedingEdge/etc/mono/4.5/machine.config"
       ],
       "Outputs": [
         "Server_Data/MonoBleedingEdge/etc/mono/4.5/machine.config"
@@ -3034,7 +3034,7 @@
       "Annotation": "CopyFiles Server_Data/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx",
       "ActionType": "CopyFiles",
       "Inputs": [
-        "/home/tomas/Documents/Unity/Hub/Editor/2021.3.14f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/linux64_player_development_mono/Data/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx"
+        "/home/tomas/Documents/Unity/Hub/Editor/2021.3.14f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/linux64_server_development_mono/Data/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx"
       ],
       "Outputs": [
         "Server_Data/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx"
@@ -3045,7 +3045,7 @@
       "Annotation": "CopyFiles Server_Data/MonoBleedingEdge/etc/mono/mconfig/config.xml",
       "ActionType": "CopyFiles",
       "Inputs": [
-        "/home/tomas/Documents/Unity/Hub/Editor/2021.3.14f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/linux64_player_development_mono/Data/MonoBleedingEdge/etc/mono/mconfig/config.xml"
+        "/home/tomas/Documents/Unity/Hub/Editor/2021.3.14f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/linux64_server_development_mono/Data/MonoBleedingEdge/etc/mono/mconfig/config.xml"
       ],
       "Outputs": [
         "Server_Data/MonoBleedingEdge/etc/mono/mconfig/config.xml"
@@ -3056,7 +3056,7 @@
       "Annotation": "CopyFiles Server_Data/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser",
       "ActionType": "CopyFiles",
       "Inputs": [
-        "/home/tomas/Documents/Unity/Hub/Editor/2021.3.14f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/linux64_player_development_mono/Data/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser"
+        "/home/tomas/Documents/Unity/Hub/Editor/2021.3.14f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/linux64_server_development_mono/Data/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser"
       ],
       "Outputs": [
         "Server_Data/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser"
@@ -3067,7 +3067,7 @@
       "Annotation": "CopyFiles Server_Data/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser",
       "ActionType": "CopyFiles",
       "Inputs": [
-        "/home/tomas/Documents/Unity/Hub/Editor/2021.3.14f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/linux64_player_development_mono/Data/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser"
+        "/home/tomas/Documents/Unity/Hub/Editor/2021.3.14f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/linux64_server_development_mono/Data/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser"
       ],
       "Outputs": [
         "Server_Data/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser"
@@ -3078,7 +3078,7 @@
       "Annotation": "CopyFiles Server_Data/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser",
       "ActionType": "CopyFiles",
       "Inputs": [
-        "/home/tomas/Documents/Unity/Hub/Editor/2021.3.14f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/linux64_player_development_mono/Data/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser"
+        "/home/tomas/Documents/Unity/Hub/Editor/2021.3.14f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/linux64_server_development_mono/Data/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser"
       ],
       "Outputs": [
         "Server_Data/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser"
@@ -3499,10 +3499,10 @@
       "File": "/home/tomas/Documents/Unity/Hub/Editor/2021.3.14f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport"
     },
     {
-      "File": "/home/tomas/Documents/Unity/Hub/Editor/2021.3.14f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/linux64_player_development_mono/Data/MonoBleedingEdge"
+      "File": "/home/tomas/Documents/Unity/Hub/Editor/2021.3.14f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/linux64_server_development_mono/Data/MonoBleedingEdge"
     },
     {
-      "File": "/home/tomas/Documents/Unity/Hub/Editor/2021.3.14f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/linux64_player_development_mono/Data/Resources"
+      "File": "/home/tomas/Documents/Unity/Hub/Editor/2021.3.14f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/linux64_server_development_mono/Data/Resources"
     },
     {
       "File": "Library/Bee/Player7e63ce68-inputdata.json"
@@ -3519,11 +3519,11 @@
       "Path": "/home/tomas/Documents/Unity/Hub/Editor/2021.3.14f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport"
     },
     {
-      "Path": "/home/tomas/Documents/Unity/Hub/Editor/2021.3.14f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/linux64_player_development_mono/Data/MonoBleedingEdge",
+      "Path": "/home/tomas/Documents/Unity/Hub/Editor/2021.3.14f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/linux64_server_development_mono/Data/MonoBleedingEdge",
       "Recurse": 1
     },
     {
-      "Path": "/home/tomas/Documents/Unity/Hub/Editor/2021.3.14f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/linux64_player_development_mono/Data/Resources",
+      "Path": "/home/tomas/Documents/Unity/Hub/Editor/2021.3.14f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/linux64_server_development_mono/Data/Resources",
       "Recurse": 1
     },
     {
@@ -3534,7 +3534,7 @@
       "Recurse": 1
     },
     {
-      "Path": "Library/PlayerDataCache/Linux64/Data",
+      "Path": "Library/PlayerDataCache/Linux641/Data",
       "Recurse": 1
     },
     {

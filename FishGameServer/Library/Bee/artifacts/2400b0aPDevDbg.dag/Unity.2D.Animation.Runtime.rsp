@@ -98,6 +98,7 @@
 -define:NETSTANDARD2_1
 -define:DEVELOPMENT_BUILD
 -define:ENABLE_PROFILER
+-define:UNITY_SERVER
 -define:DEBUG
 -define:TRACE
 -define:UNITY_ASSERTIONS

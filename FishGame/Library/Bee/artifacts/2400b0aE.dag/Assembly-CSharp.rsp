@@ -384,6 +384,7 @@
 "Assets/Scripts/Multiplayer/NetworkManager.cs"
 "Assets/Scripts/Planton.cs"
 "Assets/Scripts/PlantonMovement.cs"
+"Assets/Scripts/Player.cs"
 "Assets/Scripts/PlayerMovement.cs"
 "Assets/Scripts/UIManager.cs"
 -langversion:9.0

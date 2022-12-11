@@ -4,15 +4,29 @@ using UnityEngine;
 
 public class GameLogix : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
+    private static GameLogix _singleton;
+
+    public static GameLogix Singleton {
+
+        get => _singleton;
+        private set {
+            if (_singleton == null) _singleton = value;
+            else {
+                Debug.Log($"{nameof(GameLogix)} already exists");
+                Destroy(value);
+            }
+        }
+
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+    public GameObject LocalPlayerPrefab => localPlayerPrefab;
+    public GameObject PlayerPrefab => playerPrefab;
+
+    [Header("Prefabs")]
+    [SerializeField] private GameObject localPlayerPrefab;
+    [SerializeField] private GameObject playerPrefab;
+
+    private void Awake() {
+        Singleton = this;
     }
 }

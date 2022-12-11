@@ -95,6 +95,7 @@
 -define:NET_4_6
 -define:NET_UNITY_4_8
 -define:ENABLE_PROFILER
+-define:UNITY_SERVER
 -define:DEBUG
 -define:TRACE
 -define:UNITY_ASSERTIONS
@@ -204,6 +205,7 @@
 -r:"/home/tomas/Documents/Unity/Hub/Editor/2021.3.14f1/Editor/Data/Managed/UnityEngine/UnityEngine.XRModule.dll"
 -r:"/home/tomas/Documents/Unity/Hub/Editor/2021.3.14f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll"
 -r:"/home/tomas/Documents/Unity/Hub/Editor/2021.3.14f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll"
+-r:"/home/tomas/Documents/Unity/Hub/Editor/2021.3.14f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll"
 -r:"/home/tomas/Documents/Unity/Hub/Editor/2021.3.14f1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/Microsoft.Win32.Primitives.dll"
 -r:"/home/tomas/Documents/Unity/Hub/Editor/2021.3.14f1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.AppContext.dll"
 -r:"/home/tomas/Documents/Unity/Hub/Editor/2021.3.14f1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.Buffers.dll"
