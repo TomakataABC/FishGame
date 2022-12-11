@@ -21,6 +21,7 @@ public class UIManager : MonoBehaviour
 
     }
 
+    [Header("Connect")]
     [SerializeField] private GameObject mainMenu;
     [SerializeField] private InputField username;
     [SerializeField] private InputField ipPort;
@@ -44,7 +45,7 @@ public class UIManager : MonoBehaviour
     }
     
     public void SendName() {
-        Message message = Message.Create(MessageSendMode.Reliable, (ushort)ClientToServerId.name);
+        Message message = Message.Create(MessageSendMode.Reliable, ClientToServerId.name);
         message.AddString(username.text);
         NetworkManager.Singleton.client.Send(message);
     }

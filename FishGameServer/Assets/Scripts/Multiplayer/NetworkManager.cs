@@ -27,7 +27,7 @@ public class NetworkManager : MonoBehaviour {
 
     }
 
-    public Server server {get; private set; }
+    public Server server { get; private set; }
 
     [SerializeField] private ushort port;
     [SerializeField] private ushort maxClients;

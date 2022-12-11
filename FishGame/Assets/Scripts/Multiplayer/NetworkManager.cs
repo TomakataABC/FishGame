@@ -30,9 +30,6 @@ public class NetworkManager : MonoBehaviour
 
     public Client client { get; private set; }
 
-    [SerializeField] private string ip;
-    [SerializeField] private ushort port;
-
     private void Awake() {
         Singleton = this;
     }
