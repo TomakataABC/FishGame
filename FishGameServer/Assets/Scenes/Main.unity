@@ -153,7 +153,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0963bdfc13b8a8dfb8528e4c6b773da7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  port: 7777
+  port: 80
   maxClients: 33
 --- !u!4 &1290459802
 Transform:
@@ -182,4 +182,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d99288762e2f2393943e4ede05ec353, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerPrefab: {fileID: 8245052761637229464, guid: 3ef9b6cc8fdbcc893ac750864bda1119, type: 3}
+  playerPrefab: {fileID: 7797680633615113859, guid: 3ef9b6cc8fdbcc893ac750864bda1119, type: 3}

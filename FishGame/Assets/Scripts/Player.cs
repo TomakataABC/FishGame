@@ -17,6 +17,10 @@ public class Player : MonoBehaviour
         list.Remove(Id);
     }
 
+    private void Move(Vector2 pos) {
+        transform.position = pos;
+    }
+
     public static void Spawn(ushort id, string username, Vector2 position)
     {
         Player player;
@@ -43,4 +47,10 @@ public class Player : MonoBehaviour
     {
         Spawn(message.GetUShort(), message.GetString(), message.GetVector2());
     }
+
+    [MessageHandler((ushort)ServerToClientId.playerMovement)]
+    private static void PlayerMovement(Message message) {
+        if (list.TryGetValue(message.GetUShort(), out Player player)) player.Move(message.GetVector2());
+    }
+
 }

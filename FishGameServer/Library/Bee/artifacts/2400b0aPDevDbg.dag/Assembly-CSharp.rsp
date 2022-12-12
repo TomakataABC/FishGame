@@ -330,6 +330,7 @@
 "Assets/Scripts/Multiplayer/MessageExtensions.cs"
 "Assets/Scripts/Multiplayer/NetworkManager.cs"
 "Assets/Scripts/Player.cs"
+"Assets/Scripts/PlayerMovement.cs"
 -langversion:9.0
 
 /deterministic
