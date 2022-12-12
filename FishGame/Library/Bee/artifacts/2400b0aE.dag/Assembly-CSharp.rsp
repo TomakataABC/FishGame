@@ -380,7 +380,6 @@
 "Assets/Scripts/Background/GameSetup.cs"
 "Assets/Scripts/FollowCamera.cs"
 "Assets/Scripts/GameLogix.cs"
-"Assets/Scripts/Multiplayer/MessageExtensions.cs"
 "Assets/Scripts/Multiplayer/NetworkManager.cs"
 "Assets/Scripts/Planton.cs"
 "Assets/Scripts/PlantonMovement.cs"

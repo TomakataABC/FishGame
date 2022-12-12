@@ -35,14 +35,14 @@ public class Player : MonoBehaviour
         NetworkManager.Singleton.server.SendToAll(
             AddSpawnData(
                 Message.Create(
-                    MessageSendMode.Reliable, (ushort)ServerToClientId.playerSpawned)));
+                    MessageSendMode.Reliable, ServerToClientId.playerSpawned)));
     }
 
     private void SendSpawned(ushort toClientId) {
         NetworkManager.Singleton.server.Send(
             AddSpawnData(
                 Message.Create(
-                    MessageSendMode.Reliable, (ushort)ServerToClientId.playerSpawned)), toClientId);
+                    MessageSendMode.Reliable, ServerToClientId.playerSpawned)), toClientId);
     }
 
     private Message AddSpawnData(Message message) {
