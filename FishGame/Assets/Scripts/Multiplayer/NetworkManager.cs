@@ -30,6 +30,8 @@ public class NetworkManager : MonoBehaviour
 
     }
 
+    [SerializeField] private GameObject loadScreen;
+
     public Client client { get; private set; }
 
     private void Awake() {
@@ -63,6 +65,7 @@ public class NetworkManager : MonoBehaviour
 
     private void DidConnect(object sender, EventArgs e) {
         UIManager.Singleton.SendName();
+        loadScreen.SetActive(false);
     }
     
     private void FailedToConnect(object sender, EventArgs e) {

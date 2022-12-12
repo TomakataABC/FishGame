@@ -1597,10 +1597,6 @@ MonoBehaviour:
   pufferFish: {fileID: 21300000, guid: be93a71faf2c92148a2c5ccdc3870bd3, type: 3}
   octopus: {fileID: 21300000, guid: 21cf9eeef14b79a4190a8c554150e1e2, type: 3}
   shark: {fileID: 21300000, guid: c01511427dfe5ae41bf405fda39a0cc6, type: 3}
-  GameSetup: {fileID: 201215730}
-  MaxVerticalSpeed: 1000
-  MaxHorizontalSpeed: 1000
-  PlayerDirection: 0
   Score: 0
 --- !u!50 &1630703506
 Rigidbody2D:
@@ -2028,8 +2024,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fab81a18d064cae86adb20c5e03041e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ip: 141.95.54.242
-  port: 7777
 --- !u!4 &1846897080
 Transform:
   m_ObjectHideFlags: 0

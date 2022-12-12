@@ -23,6 +23,7 @@ public class UIManager : MonoBehaviour
 
     [Header("Connect")]
     [SerializeField] private GameObject mainMenu;
+    [SerializeField] private GameObject loadScreen;
     [SerializeField] private InputField username;
     [SerializeField] private InputField ipPort;
 
@@ -34,6 +35,7 @@ public class UIManager : MonoBehaviour
         ipPort.interactable = false;
         username.interactable = false;
         mainMenu.SetActive(false);
+        loadScreen.SetActive(true);
 
         NetworkManager.Singleton.Connect(ipPort.text);
     }
@@ -41,6 +43,7 @@ public class UIManager : MonoBehaviour
     public void BackToMain() {
         ipPort.interactable = true;
         username.interactable = true;
+        loadScreen.SetActive(false);
         mainMenu.SetActive(true);
     }
     
