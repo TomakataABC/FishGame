@@ -1,0 +1,21 @@
+{
+  "name": "com.unity.sysroot",
+  "displayName": "Sysroot Base",
+  "version": "2.0.4",
+  "unity": "2019.4",
+  "keywords": [
+    "unity",
+    "linux",
+    "sysroot"
+  ],
+  "description": "This is the base sysroot package required by all sysroot and toolchain packages",
+  "dependencies": {},
+  "upmCi": {
+    "footprint": "aa47e3dc96a025e041cdddfbac113f52699da96b"
+  },
+  "repository": {
+    "url": "https://github.com/Unity-Technologies/com.unity.sysroot.git",
+    "type": "git",
+    "revision": "573e391bf0f49bc3cce1c2eea80944b240187feb"
+  }
+}
