@@ -31,7 +31,7 @@ public class Player : MonoBehaviour
         list.Remove(Id);
     }
 
-    private void Move(Vector3 pos) {
+    private void Move(Vector2 pos) {
         transform.position = pos;
     }
 
@@ -88,7 +88,7 @@ public class Player : MonoBehaviour
         {
             GetComponentInParent<SpriteRenderer>().sprite = octopus;
 
-            transform.localScale = new Vector3(transform.localScale.x - 0.02f, transform.localScale.y - 0.02f);
+            transform.localScale = new Vector2(transform.localScale.x - 0.02f, transform.localScale.y - 0.02f);
 
             StartCoroutine(SmoothScaleTransitionCoroutine(0.085f, 0.085f));
             StartCoroutine(SmoothCameraTransitionCoroutine(1f));
@@ -97,7 +97,7 @@ public class Player : MonoBehaviour
         {
             GetComponentInParent<SpriteRenderer>().sprite = pufferFish;
 
-            transform.localScale = new Vector3(transform.localScale.x - 0.035f, transform.localScale.y - 0.025f);
+            transform.localScale = new Vector2(transform.localScale.x - 0.035f, transform.localScale.y - 0.025f);
 
             StartCoroutine(SmoothScaleTransitionCoroutine(0.11f, 0.07f));
             StartCoroutine(SmoothCameraTransitionCoroutine(1f));
@@ -106,7 +106,7 @@ public class Player : MonoBehaviour
         {
             GetComponentInParent<SpriteRenderer>().sprite = highFish;
 
-            //transform.localScale = new Vector3(transform.localScale.x - 0.02f, transform.localScale.y - 0.03f);
+            transform.localScale = new Vector2(transform.localScale.x - 0.02f, transform.localScale.y - 0.03f);
 
             StartCoroutine(SmoothScaleTransitionCoroutine(0.04f, 0.06f));
             StartCoroutine(SmoothCameraTransitionCoroutine(1f));
@@ -115,7 +115,7 @@ public class Player : MonoBehaviour
         {
             GetComponentInParent<SpriteRenderer>().sprite = lowFish;
 
-            transform.localScale = new Vector3(0.09f, 0.13f);
+            transform.localScale = new Vector2(0.09f, 0.13f);
             followCamera.z = 3.5f;
         }
     }
@@ -124,7 +124,7 @@ public class Player : MonoBehaviour
     {
         for (int i = 0; i < 100; i++)
         {
-            transform.localScale = new Vector3(transform.localScale.x + difference / 100, transform.localScale.y + differenceTwo / 100);
+            transform.localScale = new Vector2(transform.localScale.x + difference / 100, transform.localScale.y + differenceTwo / 100);
             yield return new WaitForSecondsRealtime(0.3f / 100);
         }
     }
@@ -140,13 +140,13 @@ public class Player : MonoBehaviour
 
     [MessageHandler((ushort)ServerToClientId.playerSpawned)]
     private static void SpawnPlayer(Message message) {
-        Spawn(message.GetUShort(), message.GetString(), message.GetVector3());
+        Spawn(message.GetUShort(), message.GetString(), message.GetVector2());
     }
 
     [MessageHandler((ushort)ServerToClientId.playerMovement)]
     private static void PlayerMovement(Message message) {
         if (list.TryGetValue(NetworkManager.Singleton.client.Id, out Player player)) 
-            player.Move(message.GetVector3());
+            player.Move(message.GetVector2());
     }
 
     [MessageHandler((ushort)ServerToClientId.roundScoreChange)]

@@ -159,7 +159,7 @@ public class PlayerMovement : MonoBehaviour
     private void SendMovement() {
         Message message = Message.Create(MessageSendMode.Unreliable, ServerToClientId.playerMovement);
         message.AddUShort(player.Id);
-        message.AddVector3(transform.position);
+        message.AddVector2(transform.position);
         NetworkManager.Singleton.server.SendToAll(message);
     }
 

@@ -23,7 +23,7 @@ public class Player : MonoBehaviour
 
         foreach (Player otherPlayer in list.Values) otherPlayer.SendSpawned(id);
 
-        Player player = Instantiate(GameLogix.Singleton.PlayerPrefab, new Vector3(0f, 0f, 0f), Quaternion.identity).GetComponent<Player>();
+        Player player = Instantiate(GameLogix.Singleton.PlayerPrefab, new Vector2(0f, 0f), Quaternion.identity).GetComponent<Player>();
         player.name = $"Player {id} ({(string.IsNullOrEmpty(username) ? "Guest" : username)})";
         player.Id = id;
         player.Username = string.IsNullOrEmpty(username) ? $"Guest {id}" : username;
@@ -52,7 +52,7 @@ public class Player : MonoBehaviour
     private Message AddSpawnData(Message message) {
         message.AddUShort(Id);
         message.AddString(Username);
-        message.AddVector3(transform.position);
+        message.AddVector2(transform.position);
         return message;
     }
 
