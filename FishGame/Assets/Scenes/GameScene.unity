@@ -214,9 +214,9 @@ Canvas:
   m_Enabled: 1
   serializedVersion: 3
   m_RenderMode: 1
-  m_Camera: {fileID: 0}
+  m_Camera: {fileID: 519420031}
   m_PlaneDistance: 100
-  m_PixelPerfect: 0
+  m_PixelPerfect: 1
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
@@ -318,7 +318,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -10
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 47d780b0df7e148459c1d19aef86da4a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -2358,4 +2358,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   localPlayerPrefab: {fileID: 2041365364645026022, guid: c2b4f655b5dccbf9393a47849676bfd6, type: 3}
-  playerPrefab: {fileID: 2260113463160647138, guid: 294cda09234cb49c89250ab73c0e0990, type: 3}
+  playerPrefab: {fileID: 2351235386957725240, guid: 294cda09234cb49c89250ab73c0e0990, type: 3}

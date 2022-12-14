@@ -377,10 +377,12 @@
 -r:"Library/Bee/artifacts/2400b0aE.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/2400b0aE.dag/UnityEngine.UI.ref.dll"
 "Assets/Scripts/GameLogix.cs"
-"Assets/Scripts/Multiplayer/MessageExtensions.cs"
 "Assets/Scripts/Multiplayer/NetworkManager.cs"
+"Assets/Scripts/Plankton.cs"
+"Assets/Scripts/PlanktonMovement.cs"
 "Assets/Scripts/Player.cs"
 "Assets/Scripts/PlayerMovement.cs"
+"Assets/Scripts/ServerSetup.cs"
 -langversion:9.0
 
 /deterministic

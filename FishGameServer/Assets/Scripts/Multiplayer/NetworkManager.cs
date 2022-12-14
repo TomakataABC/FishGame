@@ -60,7 +60,7 @@ public class NetworkManager : MonoBehaviour {
     }
 
     private void PlayerLeft(object sender, ServerDisconnectedEventArgs e) {
-        Destroy(Player.list[e.Client.Id].gameObject);
+        if (Player.list.TryGetValue(e.Client.Id, out Player player)) Destroy(player.gameObject);
     }
 
 }
