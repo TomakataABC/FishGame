@@ -12,6 +12,8 @@ public class Player : MonoBehaviour
     public PlayerMovement Movement => movement;
 
     [SerializeField] private PlayerMovement movement;
+
+    [SerializeField] private int roundScore;
     
     private void OnDestroy() {
         list.Remove(Id);
@@ -21,12 +23,14 @@ public class Player : MonoBehaviour
 
         foreach (Player otherPlayer in list.Values) otherPlayer.SendSpawned(id);
 
-        Player player = Instantiate(GameLogix.Singleton.PlayerPrefab, new Vector2(0f, 0f), Quaternion.identity).GetComponent<Player>();
+        Player player = Instantiate(GameLogix.Singleton.PlayerPrefab, new Vector3(0f, 0f, 0f), Quaternion.identity).GetComponent<Player>();
         player.name = $"Player {id} ({(string.IsNullOrEmpty(username) ? "Guest" : username)})";
         player.Id = id;
         player.Username = string.IsNullOrEmpty(username) ? $"Guest {id}" : username;
 
         player.SendSpawned();
+        player.roundScore = 5;
+        player.SendScoreChanged();
         list.Add(id, player);
 
     }
@@ -48,8 +52,14 @@ public class Player : MonoBehaviour
     private Message AddSpawnData(Message message) {
         message.AddUShort(Id);
         message.AddString(Username);
-        message.AddVector2(transform.position);
+        message.AddVector3(transform.position);
         return message;
+    }
+
+    private void SendScoreChanged() {
+        Message message = Message.Create(MessageSendMode.Reliable, ServerToClientId.roundScoreChange);
+        message.AddInt(roundScore);
+        NetworkManager.Singleton.server.Send(message, Id);
     }
     
     [MessageHandler((ushort)ClientToServerId.name)]

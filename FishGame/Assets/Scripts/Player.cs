@@ -21,7 +21,8 @@ public class Player : MonoBehaviour
     public Sprite octopus;
     public Sprite shark;
 
-    public int Score;
+    public int RoundScore;
+    public int GlobalScore;
 
     public Text ScoreText;
 
@@ -30,7 +31,7 @@ public class Player : MonoBehaviour
         list.Remove(Id);
     }
 
-    private void Move(Vector2 pos) {
+    private void Move(Vector3 pos) {
         transform.position = pos;
     }
 
@@ -55,26 +56,35 @@ public class Player : MonoBehaviour
         list.Add(id, player);
     }
 
+    private void ChangeScore(int value, int mode) {
+         if (mode == 1) {
+            RoundScore = value;
+         } else {
+            GlobalScore = value;
+         }
+    }
+
     void Update()
     {
         CheckSprite();
+        ScoreText.text = RoundScore.ToString();
     }
 
     void CheckSprite()
     {
-        if (Score >= 70)
+        if (RoundScore >= 70)
         {
             GetComponentInParent<SpriteRenderer>().enabled = false;
             enabled = false;
         }
-        else if (Score >= 50 &&  GetComponentInParent<SpriteRenderer>().sprite != shark)
+        else if (RoundScore >= 50 &&  GetComponentInParent<SpriteRenderer>().sprite != shark)
         {
             GetComponentInParent<SpriteRenderer>().sprite = shark;
 
             StartCoroutine(SmoothScaleTransitionCoroutine(0.15f, 0.15f));
             StartCoroutine(SmoothCameraTransitionCoroutine(1f));
         }
-        else if (Score >= 30 && Score < 50 && GetComponentInParent<SpriteRenderer>().sprite != octopus)
+        else if (RoundScore >= 30 && RoundScore < 50 && GetComponentInParent<SpriteRenderer>().sprite != octopus)
         {
             GetComponentInParent<SpriteRenderer>().sprite = octopus;
 
@@ -83,7 +93,7 @@ public class Player : MonoBehaviour
             StartCoroutine(SmoothScaleTransitionCoroutine(0.085f, 0.085f));
             StartCoroutine(SmoothCameraTransitionCoroutine(1f));
         }
-        else if (Score >= 18 && Score < 30 && GetComponentInParent<SpriteRenderer>().sprite != pufferFish)
+        else if (RoundScore >= 18 && RoundScore < 30 && GetComponentInParent<SpriteRenderer>().sprite != pufferFish)
         {
             GetComponentInParent<SpriteRenderer>().sprite = pufferFish;
 
@@ -92,11 +102,11 @@ public class Player : MonoBehaviour
             StartCoroutine(SmoothScaleTransitionCoroutine(0.11f, 0.07f));
             StartCoroutine(SmoothCameraTransitionCoroutine(1f));
         }
-        else if (Score >= 10 && Score < 18 && GetComponentInParent<SpriteRenderer>().sprite != highFish)
+        else if (RoundScore >= 10 && RoundScore < 18 && GetComponentInParent<SpriteRenderer>().sprite != highFish)
         {
             GetComponentInParent<SpriteRenderer>().sprite = highFish;
 
-            transform.localScale = new Vector3(transform.localScale.x - 0.02f, transform.localScale.y - 0.03f);
+            //transform.localScale = new Vector3(transform.localScale.x - 0.02f, transform.localScale.y - 0.03f);
 
             StartCoroutine(SmoothScaleTransitionCoroutine(0.04f, 0.06f));
             StartCoroutine(SmoothCameraTransitionCoroutine(1f));
@@ -129,14 +139,26 @@ public class Player : MonoBehaviour
     }
 
     [MessageHandler((ushort)ServerToClientId.playerSpawned)]
-    private static void SpawnPlayer(Message message)
-    {
-        Spawn(message.GetUShort(), message.GetString(), message.GetVector2());
+    private static void SpawnPlayer(Message message) {
+        Spawn(message.GetUShort(), message.GetString(), message.GetVector3());
     }
 
     [MessageHandler((ushort)ServerToClientId.playerMovement)]
     private static void PlayerMovement(Message message) {
-        if (list.TryGetValue(message.GetUShort(), out Player player)) player.Move(message.GetVector2());
+        if (list.TryGetValue(NetworkManager.Singleton.client.Id, out Player player)) 
+            player.Move(message.GetVector3());
+    }
+
+    [MessageHandler((ushort)ServerToClientId.roundScoreChange)]
+    private static void ChangeRoundScore(Message message) {
+        if (list.TryGetValue(NetworkManager.Singleton.client.Id, out Player player))
+            player.ChangeScore(message.GetInt(), 1);
+    }
+
+    [MessageHandler((ushort)ServerToClientId.globalScoreChange)]
+    private static void ChangeGlobalScore(Message message) {
+        if (list.TryGetValue(NetworkManager.Singleton.client.Id, out Player player))
+            player.ChangeScore(message.GetInt(), 0);
     }
 
 }

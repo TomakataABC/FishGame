@@ -6,7 +6,8 @@ using System;
 public enum ServerToClientId : ushort {
     playerSpawned = 1,
     playerMovement,
-    playerScore,
+    roundScoreChange,
+    globalScoreChange,
 }
 
 public enum ClientToServerId : ushort {

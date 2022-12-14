@@ -24,8 +24,6 @@ public class PlayerMovement : MonoBehaviour
 
     public Direction PlayerDirection;
 
-    public int Score;
-
     private float[] inputs;
 
     float horizontalSpeed;
@@ -44,8 +42,6 @@ public class PlayerMovement : MonoBehaviour
         HorizontalSpeed = 0;
         VerticalSpeed = 0;
 
-        Score = 5;
-
         sss = GameObject.Find("Bg");
         ss = sss.GetComponent<ServerSetup>();
     }
@@ -55,7 +51,6 @@ public class PlayerMovement : MonoBehaviour
         if (inputs[1] != 0) verticalSpeed = inputs[1];
         Move();
         Turn();
-        SendScore();
     }
 
     private void Move() {
@@ -164,14 +159,7 @@ public class PlayerMovement : MonoBehaviour
     private void SendMovement() {
         Message message = Message.Create(MessageSendMode.Unreliable, ServerToClientId.playerMovement);
         message.AddUShort(player.Id);
-        message.AddVector2(transform.position);
-        NetworkManager.Singleton.server.SendToAll(message);
-    }
-
-    private void SendScore() {
-        Message message = Message.Create(MessageSendMode.Unreliable, ServerToClientId.playerScore);
-        message.AddUShort(player.Id);
-        message.AddInt(Score);
+        message.AddVector3(transform.position);
         NetworkManager.Singleton.server.SendToAll(message);
     }
 
