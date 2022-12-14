@@ -128,16 +128,6 @@ public class Player : MonoBehaviour
         }
     }
 
-    [MessageHandler((ushort)ServerToClientId.playerScore)]
-    private static void AdjustScore(Message message) {
-        if (list.TryGetValue(message.GetUShort(), out Player player)) {
-            if (message.GetUShort() == NetworkManager.Singleton.client.Id) {
-                player.Score = message.GetInt();
-                player.ScoreText.text = message.GetInt().ToString();
-            }
-        }
-    }
-
     [MessageHandler((ushort)ServerToClientId.playerSpawned)]
     private static void SpawnPlayer(Message message)
     {

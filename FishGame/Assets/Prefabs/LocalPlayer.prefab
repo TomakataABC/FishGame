@@ -28,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 2041365364645026022}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 56.038937, y: -2.0561814, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.09, y: 0.13, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 180429682655040525}
@@ -77,15 +77,15 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 50
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 76631fad5f1190c49ab41494101ee004, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.8828125, y: 1}
+  m_Size: {x: 23.02282, y: 6.7000003}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!114 &1445211241095313431
@@ -107,7 +107,7 @@ MonoBehaviour:
   octopus: {fileID: 21300000, guid: 21cf9eeef14b79a4190a8c554150e1e2, type: 3}
   shark: {fileID: 21300000, guid: c01511427dfe5ae41bf405fda39a0cc6, type: 3}
   Score: 0
-  ScoreText: {fileID: 0}
+  ScoreText: {fileID: 5652105920465617312}
 --- !u!114 &1942833824553447119
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -156,7 +156,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -248.89, y: 46.667}
+  m_AnchoredPosition: {x: -248.89001, y: 46.666992}
   m_SizeDelta: {x: 497.781, y: 93.333984}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2846653506904098074
@@ -314,7 +314,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 2041365364645026022}
-  z: 0
+  z: 3.5
 --- !u!1 &9221594943044819744
 GameObject:
   m_ObjectHideFlags: 0
@@ -364,7 +364,7 @@ Canvas:
   m_GameObject: {fileID: 9221594943044819744}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 1
+  m_RenderMode: 0
   m_Camera: {fileID: 8938850634450254880}
   m_PlaneDistance: 100
   m_PixelPerfect: 1
