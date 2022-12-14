@@ -18,8 +18,6 @@ public class ServerSetup : MonoBehaviour
 
     public bool[,] isOccupied;
 
-
-
     public float Width;
 
     public float Height;

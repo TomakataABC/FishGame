@@ -389,7 +389,6 @@
 "Assets/Scripts/PlantonMovement.cs"
 "Assets/Scripts/Player.cs"
 "Assets/Scripts/PlayerController.cs"
-"Assets/Scripts/PlayerMovement.cs"
 "Assets/Scripts/UIManager.cs"
 -langversion:9.0
 

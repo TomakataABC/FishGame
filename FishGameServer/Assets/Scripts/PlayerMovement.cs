@@ -8,14 +8,11 @@ public class PlayerMovement : MonoBehaviour
 {
     [SerializeField] private Player player;
 
-    public Sprite lowFish;
-    public Sprite highFish;
-    public Sprite pufferFish;
-    public Sprite octopus;
-    public Sprite shark;
-
     [NonSerialized] public float HorizontalSpeed;
     [NonSerialized] public float VerticalSpeed;
+
+    private GameObject sss;
+    private ServerSetup ss;
 
     [NonSerialized] public float HorizontalSpeedOut;
     [NonSerialized] public float VerticalSpeedOut;
@@ -48,6 +45,9 @@ public class PlayerMovement : MonoBehaviour
         VerticalSpeed = 0;
 
         Score = 5;
+
+        sss = GameObject.Find("Bg");
+        ss = sss.GetComponent<ServerSetup>();
     }
 
     private void FixedUpdate() {
@@ -55,10 +55,11 @@ public class PlayerMovement : MonoBehaviour
         if (inputs[1] != 0) verticalSpeed = inputs[1];
         Move();
         Turn();
+        SendScore();
     }
 
     private void Move() {
-        //ReactToAreaBoundries();
+        ReactToAreaBoundries();
         ReactToInput();
         if (PlayerDirection == Direction.Right)
         {
@@ -95,25 +96,24 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    /*
     private void ReactToAreaBoundries()
     {
         float increment = 0.05f;
         if (isOutOfArea())
         {
-            if (transform.position.x > GameSetup.UnitWidth)
+            if (transform.position.x > ss.UnitWidth)
             {
                 HorizontalSpeedOut = PlayerDirection == Direction.Left ? HorizontalSpeedOut - increment : HorizontalSpeedOut + increment;
             }
-            if (transform.position.x < -1 * GameSetup.UnitWidth)
+            if (transform.position.x < -1 * ss.UnitWidth)
             {
                 HorizontalSpeedOut = PlayerDirection == Direction.Left ? HorizontalSpeedOut + increment : HorizontalSpeedOut - increment;
             }
-            if (transform.position.y > GameSetup.UnitHeight)
+            if (transform.position.y > ss.UnitHeight)
             {
                 VerticalSpeedOut = VerticalSpeedOut - increment;
             }
-            if (transform.position.y < -1 * GameSetup.UnitHeight)
+            if (transform.position.y < -1 * ss.UnitHeight)
             {
                 VerticalSpeedOut = VerticalSpeedOut + increment;
             }
@@ -149,13 +149,13 @@ public class PlayerMovement : MonoBehaviour
     }
 
     private bool isOutOfArea() {
-        if (Math.Abs(transform.position.x) > GameSetup.UnitWidth || Math.Abs(transform.position.y) > GameSetup.UnitHeight)
+        if (Math.Abs(transform.position.x) > ss.UnitWidth || Math.Abs(transform.position.y) > ss.UnitHeight)
         {
             return true;
         }
         return false;
     }
-    */
+
 
     public void SetInputs(float[] inputs) {
         this.inputs = inputs;
@@ -165,6 +165,13 @@ public class PlayerMovement : MonoBehaviour
         Message message = Message.Create(MessageSendMode.Unreliable, ServerToClientId.playerMovement);
         message.AddUShort(player.Id);
         message.AddVector2(transform.position);
+        NetworkManager.Singleton.server.SendToAll(message);
+    }
+
+    private void SendScore() {
+        Message message = Message.Create(MessageSendMode.Unreliable, ServerToClientId.playerScore);
+        message.AddUShort(player.Id);
+        message.AddInt(Score);
         NetworkManager.Singleton.server.SendToAll(message);
     }
 

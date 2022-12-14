@@ -272,10 +272,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PlayerCount: 15
   absoluteBackground: {fileID: 0}
-  planton: {fileID: 0}
-  Player: {fileID: 0}
-  PlayerHeight: 0.6
-  PlayerWidth: 0.5
   Width: 10.65
   Height: 10.65
 --- !u!212 &187672604
@@ -429,10 +425,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PlayerCount: 15
   absoluteBackground: {fileID: 1477821243}
-  planton: {fileID: 893122009}
-  Player: {fileID: 1630703505}
-  PlayerHeight: 0.6
-  PlayerWidth: 0.5
   Width: 10.65
   Height: 10.65
 --- !u!1 &372240427
@@ -1261,8 +1253,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -254}
-  m_SizeDelta: {x: 1101, y: 506}
+  m_AnchoredPosition: {x: 0, y: -263.09}
+  m_SizeDelta: {x: 1325.27, y: 524.18}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1149847082
 MonoBehaviour:
@@ -1277,7 +1269,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_EffectColor: {r: 0.4470029, g: 0, b: 1, a: 0.5}
-  m_EffectDistance: {x: 560, y: -60}
+  m_EffectDistance: {x: 580, y: -60}
   m_UseGraphicAlpha: 1
 --- !u!114 &1149847083
 MonoBehaviour:
@@ -1316,18 +1308,18 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 652f7165b7c30ab46af6c4aad90a639b, type: 2}
-    m_FontSize: 190
+    m_FontSize: 230
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 1
-    m_MaxSize: 190
+    m_MaxSize: 300
     m_Alignment: 4
     m_AlignByGeometry: 1
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: The fish game
+  m_Text: Big 'ol fish
 --- !u!222 &1149847085
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1575,10 +1567,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PlayerCount: 15
   absoluteBackground: {fileID: 0}
-  planton: {fileID: 0}
-  Player: {fileID: 0}
-  PlayerHeight: 0.6
-  PlayerWidth: 0.5
   Width: 10.65
   Height: 10.65
 --- !u!212 &1336858582
@@ -1896,12 +1884,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c543559711abc20488cd0919edabf26a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  followCamera: {fileID: 519420033}
-  lowFish: {fileID: 21300000, guid: 76631fad5f1190c49ab41494101ee004, type: 3}
-  highFish: {fileID: 21300000, guid: 6adc01332b44544468a7baccc63c23ef, type: 3}
-  pufferFish: {fileID: 21300000, guid: be93a71faf2c92148a2c5ccdc3870bd3, type: 3}
-  octopus: {fileID: 21300000, guid: 21cf9eeef14b79a4190a8c554150e1e2, type: 3}
-  shark: {fileID: 21300000, guid: c01511427dfe5ae41bf405fda39a0cc6, type: 3}
   Score: 0
 --- !u!50 &1630703506
 Rigidbody2D:
