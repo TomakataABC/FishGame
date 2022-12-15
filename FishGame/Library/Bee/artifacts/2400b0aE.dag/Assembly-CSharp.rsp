@@ -385,8 +385,6 @@
 "Assets/Scripts/GameLogix.cs"
 "Assets/Scripts/Multiplayer/NetworkManager.cs"
 "Assets/Scripts/Multiplayer/OtherPlayerLogic.cs"
-"Assets/Scripts/Planton.cs"
-"Assets/Scripts/PlantonMovement.cs"
 "Assets/Scripts/Player.cs"
 "Assets/Scripts/PlayerController.cs"
 "Assets/Scripts/UIManager.cs"

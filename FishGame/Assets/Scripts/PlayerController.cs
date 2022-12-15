@@ -7,6 +7,9 @@ public class PlayerController : MonoBehaviour
 {
     private float[] inputs;
 
+    public enum Direction { Left, Right }
+    public Direction PlayerDirection;
+
     private void Start()
     {
         inputs = new float[2];
@@ -14,11 +17,26 @@ public class PlayerController : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetAxis("Horizontal") != 0)
+
+        float horizontalSpeed = Input.GetAxis("Horizontal");
+
+        if (horizontalSpeed != 0)
             inputs[0] = Input.GetAxis("Horizontal");
 
         if (Input.GetAxis("Vertical") != 0)
             inputs[1] = Input.GetAxis("Vertical");
+
+
+        if (horizontalSpeed < 0 && PlayerDirection == Direction.Left)
+        {
+            transform.Rotate(new Vector3(0, 180));
+            PlayerDirection = Direction.Right;
+        }
+        else if (horizontalSpeed > 0 && PlayerDirection == Direction.Right)
+        {
+            transform.Rotate(new Vector3(0, 180));
+            PlayerDirection = Direction.Left;
+        }
     }
 
     private void FixedUpdate()
@@ -28,6 +46,8 @@ public class PlayerController : MonoBehaviour
         for (int i = 0; i < inputs.Length; i++)
             inputs[i] = 0;
     }
+
+    
 
     private void SendInput()
     {

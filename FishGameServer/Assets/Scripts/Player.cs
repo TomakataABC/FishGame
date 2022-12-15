@@ -14,12 +14,18 @@ public class Player : MonoBehaviour
     [SerializeField] private PlayerMovement movement;
 
     [SerializeField] private int roundScore;
+
+    private static GameObject sss;
+    private static ServerSetup ss;
     
     private void OnDestroy() {
         list.Remove(Id);
     }
     
     public static void Spawn (ushort id, string username) {
+
+        sss = GameObject.Find("Bg");
+        ss = sss.GetComponent<ServerSetup>();
 
         foreach (Player otherPlayer in list.Values) otherPlayer.SendSpawned(id);
 
@@ -29,6 +35,7 @@ public class Player : MonoBehaviour
         player.Username = string.IsNullOrEmpty(username) ? $"Guest {id}" : username;
 
         player.SendSpawned();
+        ss.SendPlanktonSpawnSingle(id);
         player.roundScore = 5;
         player.SendScoreChanged();
         list.Add(id, player);

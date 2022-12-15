@@ -6,8 +6,10 @@ using System;
 public enum ServerToClientId : ushort {
     playerSpawned = 1,
     playerMovement,
+    mapSize,
     roundScoreChange,
     globalScoreChange,
+    planktonSpawn,
 }
 
 public enum ClientToServerId : ushort {

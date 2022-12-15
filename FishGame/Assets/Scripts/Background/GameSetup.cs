@@ -2,7 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.TextCore.Text;
+using Riptide;
 
 public class GameSetup : MonoBehaviour
 {
@@ -18,19 +18,34 @@ public class GameSetup : MonoBehaviour
 
     public float Height;
 
+    private static GameObject bg;
+    private static GameSetup gs;
+
     [NonSerialized] public float scale;
 
     // Start is called before the first frame update
     void Start()
     {
-        scale = 0.8f + (PlayerCount * 0.01f * PlayerCount);
-        transform.localScale = new Vector3(scale, scale);
+        ChangeMapSize(PlayerCount);
+    }
+    
+    public void ChangeMapSize(int pCount) {
+        scale = 0.8f + (pCount * 0.01f * pCount);
+        transform.localScale = new Vector2(scale, scale);
         transform.position = Vector3.zero;
 
         UnitWidth = Width * scale;
         UnitHeight = Height * scale;
 
         absoluteBackground.transform.position = transform.position;
-        absoluteBackground.transform.localScale = new Vector3(scale * 20, scale * 20);
+        absoluteBackground.transform.localScale = new Vector2(scale * 20, scale * 20);
     }
+
+    [MessageHandler((ushort)ServerToClientId.mapSize)]
+    private static void ChangeRoundScore(Message message) {
+        bg = GameObject.Find("Background");
+        gs = bg.GetComponent<GameSetup>();
+        gs.ChangeMapSize(message.GetInt());
+    }
+
 }

@@ -16,7 +16,6 @@ public class Plankton : MonoBehaviour
 
     public void Reposition()
     {
-        transform.localScale = new Vector3(Scale, Scale);
         float x = UnityEngine.Random.Range(-GameSetup.UnitWidth, GameSetup.UnitHeight);
         float y = UnityEngine.Random.Range(-GameSetup.UnitWidth, GameSetup.UnitHeight);
         transform.position = new Vector3(x, y);
