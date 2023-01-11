@@ -51,13 +51,13 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 2948}
+      Script: {instanceID: 2998}
     - Class: 114
-      Script: {instanceID: 3506}
+      Script: {instanceID: 3556}
     - Class: 114
-      Script: {instanceID: 4982}
+      Script: {instanceID: 5032}
     - Class: 114
-      Script: {instanceID: 5262}
+      Script: {instanceID: 5312}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -329,7 +329,7 @@ ScriptsOnlyBuild:
     className: Button
   - hash:
       serializedVersion: 2
-      Hash: d82ca9b7ef4146ebef7868c8f279ff4c
+      Hash: cc298e248d3d2752fbc68931647123ac
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Player
@@ -1020,4 +1020,4 @@ ScriptsOnlyBuild:
   platform: 19
   scenePathNames:
   - Assets/Scenes/SampleScene.unity
-  playerPath: "C:/Users/Tom\xE1\u0161/Documents/Unity/Server/Clean/Server.exe"
+  playerPath: C:/Users/zippy/Documents/GitHub/FishGame/Server/Build/Server.exe

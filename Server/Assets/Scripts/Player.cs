@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Riptide;
+using System;
 
 public class Player : MonoBehaviour
 {
@@ -14,6 +15,7 @@ public class Player : MonoBehaviour
     [SerializeField] private PlayerMovement movement;
 
     public int Score;
+    public bool isAlive;
 
     private void OnDestroy()
     {
@@ -31,6 +33,7 @@ public class Player : MonoBehaviour
         player.name = $"Player {id} ({(string.IsNullOrEmpty(username) ? "Guest" : username)})";
         player.Id = id;
         player.Username = string.IsNullOrEmpty(username) ? $"Guest {id}" : username;
+        player.isAlive = true;
 
         player.SendSpawned();
         player.Score = 5;
@@ -38,8 +41,22 @@ public class Player : MonoBehaviour
         list.Add(id, player);
     }
 
-    private void OnCollisionEnter2D(Collision2D other) {
+    private void OnTriggerEnter2D(Collider2D other) {
         
+        int otherScore = other.GetComponent<Player>().Score;
+        int thisScore = GetComponentInParent<Player>().Score;
+
+        if (otherScore > thisScore ) {
+            SendDeath();
+            GetComponentInParent<CircleCollider2D>().enabled = false;
+            isAlive = false;
+        }
+
+        if (otherScore < thisScore) {
+            GetComponentInParent<Player>().Score += (int)Math.Round(Math.Sqrt(otherScore));
+            SendScore();
+        }
+
     }
 
     private void SendSpawned()
@@ -60,6 +77,10 @@ public class Player : MonoBehaviour
         NetworkManager.Singleton.Server.Send(AddScoreData(Message.Create(MessageSendMode.Reliable, ServerToClientId.playerScore)), id);
     }
 
+    private void SendDeath() {
+        NetworkManager.Singleton.Server.SendToAll(AddDeathData(Message.Create(MessageSendMode.Reliable, ServerToClientId.playerDeath)));
+    }
+
     private Message AddSpawnData(Message message)
     {
         message.AddUShort(Id);
@@ -74,6 +95,11 @@ public class Player : MonoBehaviour
         return message;
     }
 
+    private Message AddDeathData(Message message) {
+        message.AddUShort(Id);
+        return message;
+    }
+
     [MessageHandler((ushort)ClientToServerId.name)]
     private static void Name(ushort fromClientId, Message message)
     {
@@ -84,6 +110,7 @@ public class Player : MonoBehaviour
     private static void Input(ushort fromClientId, Message message)
     {
         if (list.TryGetValue(fromClientId, out Player player))
-            player.Movement.SetInput(message.GetFloats(2));
+            if(player.isAlive)
+                player.Movement.SetInput(message.GetFloats(2));
     }
 }

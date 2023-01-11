@@ -21,6 +21,9 @@ public class Player : MonoBehaviour
 
     public int Score;
     [SerializeField] private Text scoreText;
+    [SerializeField] private GameObject RespawnScreen;
+
+    public bool isAlive;
 
     private void OnDestroy()
     {
@@ -41,24 +44,41 @@ public class Player : MonoBehaviour
             player.IsLocal = false;
         }
 
-        player.name = $"Player {id} (username)";
+        player.isAlive = true;
+        player.name = $"Player {id} ({username})";
         player.Id = id;
         player.username = username;
 
         list.Add(id, player);
     }
 
-    private void Move(Vector2 pos) {
-        transform.position = pos;
+    private void Move(Vector2 pos, bool direction) {
+        if (isAlive) {
+            GetComponentInParent<SpriteRenderer>().flipX = direction;
+            transform.position = pos;
+        }
     }
 
     public static void ScoreCheck(ushort id, int score) {
         Player player = list[id];
 
-        player.Score = score;
-        if (player.IsLocal)
-            player.scoreText.text = score.ToString();
-        player.CheckSprite();
+        if (player.isAlive) {
+            player.Score = score;
+            if (player.IsLocal)
+                player.scoreText.text = score.ToString();
+            player.CheckSprite();
+        }
+    }
+
+    private static void HidePlayer(ushort id) {
+        Player player = list[id];
+        player.isAlive = false;
+        player.GetComponent<SpriteRenderer>().enabled = false;
+    }
+
+    private void Die() {
+        RespawnScreen.SetActive(true);
+        scoreText.enabled = false;
     }
 
      void CheckSprite()
@@ -66,7 +86,7 @@ public class Player : MonoBehaviour
         if (Score >= 70)
         {
             GetComponentInParent<SpriteRenderer>().enabled = false;
-            enabled = false;
+            isAlive = false;
         }
         else if (Score >= 50 &&  GetComponentInParent<SpriteRenderer>().sprite != shark)
         {
@@ -124,7 +144,7 @@ public class Player : MonoBehaviour
     [MessageHandler((ushort)ServerToClientId.playerMovement)]
     private static void PlayerMovement(Message message) {
         if (list.TryGetValue(message.GetUShort(), out Player player)) 
-            player.Move(message.GetVector2());
+            player.Move(message.GetVector2(), message.GetBool());
     }
 
     [MessageHandler((ushort)ServerToClientId.playerScore)]
@@ -132,5 +152,12 @@ public class Player : MonoBehaviour
         ScoreCheck(message.GetUShort(), message.GetInt());
     }
 
+    [MessageHandler((ushort)ServerToClientId.playerDeath)]
+    private static void PlayerDied(Message message) {
+        ushort id = message.GetUShort();
+        HidePlayer(id);
+        if (list.TryGetValue(id, out Player player)) 
+            player.Die();
+    }
 
 }

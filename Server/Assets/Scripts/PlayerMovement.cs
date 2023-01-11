@@ -36,6 +36,10 @@ public class PlayerMovement : MonoBehaviour
     private void FixedUpdate() {
         horizontalSpeed = inputs[0];
         verticalSpeed = inputs[1];
+
+        if (horizontalSpeed > 0) GetComponent<SpriteRenderer>().flipX = false;
+        if (horizontalSpeed < 0) GetComponent<SpriteRenderer>().flipX = true;
+
         Move();
     }
 
@@ -54,6 +58,7 @@ public class PlayerMovement : MonoBehaviour
         Message message = Message.Create(MessageSendMode.Unreliable, ServerToClientId.playerMovement);
         message.AddUShort(player.Id);
         message.AddVector2(transform.position);
+        message.AddBool(GetComponent<SpriteRenderer>().flipX);
         NetworkManager.Singleton.Server.SendToAll(message);
     }
 

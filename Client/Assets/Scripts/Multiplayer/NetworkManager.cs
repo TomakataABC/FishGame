@@ -10,6 +10,7 @@ public enum ServerToClientId : ushort
     playerSpawned = 1,
     playerMovement,
     playerScore,
+    playerDeath,
 }
 
 public enum ClientToServerId : ushort
@@ -36,10 +37,9 @@ public class NetworkManager : MonoBehaviour
         }
     }
 
-    public Client Client { get; private set; }
+    [SerializeField] private GameObject loadScreen;
 
-    [SerializeField] private string ip;
-    [SerializeField] private ushort port;
+    public Client Client { get; private set; }
 
     private void Awake()
     {
@@ -67,14 +67,15 @@ public class NetworkManager : MonoBehaviour
         Client.Disconnect();
     }
 
-    public void Connect()
+    public void Connect(string ip)
     {
-        Client.Connect($"{ip}:{port}");
+        Client.Connect((ip != "") ? ip : "127.0.0.1:7777");
     }
 
     private void DidConnect(object sender, EventArgs e)
     {
         UIManager.Singleton.SendName();
+        loadScreen.SetActive(false);
     }
 
     private void FailedToConnect(object sender, EventArgs e)

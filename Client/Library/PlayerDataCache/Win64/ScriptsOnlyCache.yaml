@@ -12,13 +12,24 @@ ScriptsOnlyBuild:
     Unity.2D.IK.Editor.dll:
     - UnityEditor.U2D.IK.IKEditorManager
     Unity.2D.Tilemap.Editor.dll:
+    - UnityEditor.Tilemaps.GridBrush
     - UnityEditor.Tilemaps.GridPaintingState
+    - UnityEditor.Tilemaps.GridPaletteBrushes
+    - UnityEditor.Tilemaps.GridPalettes
     - UnityEditor.Tilemaps.SceneViewGridManager
     - UnityEditor.Tilemaps.SceneViewOpenTilePaletteHelper
     - UnityEditor.Tilemaps.TileDragAndDropManager
+    - UnityEditor.Tilemaps.TilemapEditorToolPreferences
     - UnityEditor.Tilemaps.TilemapPrefabStageHelper
+    Unity.2D.Tilemap.Extras.Editor.dll:
+    - UnityEditor.Tilemaps.GameObjectBrush
+    - UnityEditor.Tilemaps.GroupBrush
+    - UnityEditor.Tilemaps.LineBrush
+    - UnityEditor.Tilemaps.RandomBrush
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
+    Unity.Timeline.Editor.dll:
+    - TimelineProjectSettings
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
@@ -31,6 +42,8 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.GraphicRaycaster
     - UnityEngine.UI.Image
     - UnityEngine.UI.InputField
+    - UnityEngine.UI.Outline
+    - UnityEngine.UI.Shadow
     - UnityEngine.UI.Text
   serializedClasses:
     UnityEngine.CoreModule:
@@ -53,7 +66,7 @@ ScriptsOnlyBuild:
     fullTypeName: UIManager
     methodName: ConnectClicked
   sceneClasses:
-    Assets/Scenes/SampleScene.unity:
+    Assets/Scenes/Game.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -71,33 +84,37 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1594}
+      Script: {instanceID: 1654}
     - Class: 114
-      Script: {instanceID: 2156}
+      Script: {instanceID: 1880}
     - Class: 114
-      Script: {instanceID: 2822}
+      Script: {instanceID: 2216}
     - Class: 114
-      Script: {instanceID: 2838}
+      Script: {instanceID: 2882}
     - Class: 114
-      Script: {instanceID: 3084}
+      Script: {instanceID: 2898}
     - Class: 114
-      Script: {instanceID: 3140}
+      Script: {instanceID: 3144}
     - Class: 114
-      Script: {instanceID: 3444}
+      Script: {instanceID: 3200}
     - Class: 114
-      Script: {instanceID: 5720}
+      Script: {instanceID: 3504}
     - Class: 114
-      Script: {instanceID: 5722}
+      Script: {instanceID: 5780}
     - Class: 114
-      Script: {instanceID: 6334}
+      Script: {instanceID: 5782}
     - Class: 114
-      Script: {instanceID: 6732}
+      Script: {instanceID: 6394}
     - Class: 114
-      Script: {instanceID: 6978}
+      Script: {instanceID: 6792}
     - Class: 114
-      Script: {instanceID: 7356}
+      Script: {instanceID: 7038}
     - Class: 114
-      Script: {instanceID: 8900}
+      Script: {instanceID: 7416}
+    - Class: 114
+      Script: {instanceID: 7850}
+    - Class: 114
+      Script: {instanceID: 8960}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -257,7 +274,7 @@ ScriptsOnlyBuild:
     className: EventSystem
   - hash:
       serializedVersion: 2
-      Hash: e33b793c517546d8eadfece9405ef4a5
+      Hash: 83e0ed62854e383b8cf6792c39f4ecbb
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Player
@@ -647,7 +664,7 @@ ScriptsOnlyBuild:
     className: PlayerCamera
   - hash:
       serializedVersion: 2
-      Hash: c687a273b5dfb3cb31fce9e6f3da466b
+      Hash: 68cf24c22fd95032cdf6869688580e0c
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: NetworkManager
@@ -773,7 +790,7 @@ ScriptsOnlyBuild:
     className: TextMeshProUGUI
   - hash:
       serializedVersion: 2
-      Hash: f4734973292bd04acf340e95ce981931
+      Hash: 9424d1d83bf2e8107b68cadea9d186a9
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: UIManager
@@ -1079,5 +1096,5 @@ ScriptsOnlyBuild:
     className: UnityOnSliderValueChangedMessageListener
   platform: 19
   scenePathNames:
-  - Assets/Scenes/SampleScene.unity
-  playerPath: "C:/Users/Tom\xE1\u0161/Documents/Unity/Client/Clean/Client.exe"
+  - Assets/Scenes/Game.unity
+  playerPath: C:/Users/zippy/Documents/GitHub/FishGame/Client/Build/Client.exe
