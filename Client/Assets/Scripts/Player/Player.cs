@@ -22,6 +22,7 @@ public class Player : MonoBehaviour
     public int Score;
     [SerializeField] private Text scoreText;
     [SerializeField] private GameObject RespawnScreen;
+    [SerializeField] private GameObject TimerScreen;
 
     public bool isAlive;
 
@@ -30,7 +31,7 @@ public class Player : MonoBehaviour
         list.Remove(Id);
     }
 
-    public static void Spawn(ushort id, string username, Vector3 position)
+    public static void Spawn(ushort id, string username, bool isNotdead, Vector3 position)
     {
         Player player;
         if (id == NetworkManager.Singleton.Client.Id)
@@ -44,7 +45,9 @@ public class Player : MonoBehaviour
             player.IsLocal = false;
         }
 
-        player.isAlive = true;
+        player.isAlive = isNotdead;
+        if (!isNotdead) 
+            HidePlayer(id);
         player.name = $"Player {id} ({username})";
         player.Id = id;
         player.username = username;
@@ -62,12 +65,10 @@ public class Player : MonoBehaviour
     public static void ScoreCheck(ushort id, int score) {
         Player player = list[id];
 
-        if (player.isAlive) {
-            player.Score = score;
-            if (player.IsLocal)
-                player.scoreText.text = score.ToString();
-            player.CheckSprite();
-        }
+        player.Score = score;
+        if (player.IsLocal)
+            player.scoreText.text = score.ToString();
+        player.CheckSprite();
     }
 
     private static void HidePlayer(ushort id) {
@@ -77,8 +78,25 @@ public class Player : MonoBehaviour
     }
 
     private void Die() {
-        RespawnScreen.SetActive(true);
-        scoreText.enabled = false;
+        if (IsLocal) {
+            RespawnScreen.SetActive(true);
+            TimerScreen.SetActive(false);
+            scoreText.enabled = false;
+        }
+    }
+
+    private void NonDie() {
+        if (IsLocal) {
+            RespawnScreen.SetActive(false);
+            scoreText.enabled = true;
+        }
+    }
+
+    private static void RespawnPl(ushort id, Vector3 poz) {
+        Player player = list[id];
+        player.isAlive = true;
+        player.GetComponent<SpriteRenderer>().enabled = true;
+        player.transform.position = poz;
     }
 
      void CheckSprite()
@@ -118,7 +136,7 @@ public class Player : MonoBehaviour
 
             StartCoroutine(SmoothScaleTransitionCoroutine(0.04f, 0.06f));
         }
-        else if (GetComponentInParent<SpriteRenderer>().sprite == null)
+        else if (GetComponentInParent<SpriteRenderer>().sprite == null || Score < 10)
         {
             GetComponentInParent<SpriteRenderer>().sprite = lowFish;
 
@@ -138,7 +156,7 @@ public class Player : MonoBehaviour
     [MessageHandler((ushort)ServerToClientId.playerSpawned)]
     private static void SpawnPlayer(Message message)
     {
-        Spawn(message.GetUShort(), message.GetString(), message.GetVector3());
+        Spawn(message.GetUShort(), message.GetString(), message.GetBool(), message.GetVector3());
     }
 
     [MessageHandler((ushort)ServerToClientId.playerMovement)]
@@ -158,6 +176,14 @@ public class Player : MonoBehaviour
         HidePlayer(id);
         if (list.TryGetValue(id, out Player player)) 
             player.Die();
+    }
+
+    [MessageHandler((ushort)ServerToClientId.playerRespawn)]
+    private static void PlayerBacc(Message message) {
+        ushort id = message.GetUShort();
+        RespawnPl(id, message.GetVector2());
+        if (list.TryGetValue(id, out Player player))
+            player.NonDie();
     }
 
 }

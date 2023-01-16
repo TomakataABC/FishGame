@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Riptide;
+using System;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -36,6 +37,11 @@ public class PlayerMovement : MonoBehaviour
     private void FixedUpdate() {
         horizontalSpeed = inputs[0];
         verticalSpeed = inputs[1];
+
+        if (!player.isAlive) {
+            horizontalSpeed = 0;
+            verticalSpeed = 0;
+        }
 
         if (horizontalSpeed > 0) GetComponent<SpriteRenderer>().flipX = false;
         if (horizontalSpeed < 0) GetComponent<SpriteRenderer>().flipX = true;

@@ -17,6 +17,12 @@ public class Player : MonoBehaviour
     public int Score;
     public bool isAlive;
 
+    private bool trigger = false;
+    private float timer = 5f;
+    private float timr = 7f;
+
+    private System.Random r = new System.Random();
+
     private void OnDestroy()
     {
         list.Remove(Id);
@@ -29,34 +35,92 @@ public class Player : MonoBehaviour
             otherPlayer.SendScore();
         }
 
+        foreach (Plankton plank in Plankton.pList.Values) {
+            plank.SendSpawned(id);
+        }
+
+        GameLogic.Singleton.playerCount += 1;
+        GameLogic.Singleton.XYSize += (float)0.3;
+
+        GameLogic.Singleton.changeMap();
+
         Player player = Instantiate(GameLogic.Singleton.PlayerPrefab, new Vector3(0f, 0f, 0f), Quaternion.identity).GetComponent<Player>();
         player.name = $"Player {id} ({(string.IsNullOrEmpty(username) ? "Guest" : username)})";
         player.Id = id;
         player.Username = string.IsNullOrEmpty(username) ? $"Guest {id}" : username;
         player.isAlive = true;
+        player.timr = 7f;
 
         player.SendSpawned();
         player.Score = 5;
         player.SendScore();
         list.Add(id, player);
+
     }
 
     private void OnTriggerEnter2D(Collider2D other) {
         
-        int otherScore = other.GetComponent<Player>().Score;
-        int thisScore = GetComponentInParent<Player>().Score;
+        if (other.tag == "Player") {
+            int otherScore = other.GetComponent<Player>().Score;
+            int thisScore = GetComponentInParent<Player>().Score;
 
-        if (otherScore > thisScore ) {
-            SendDeath();
-            GetComponentInParent<CircleCollider2D>().enabled = false;
-            isAlive = false;
-        }
+            if (otherScore > thisScore ) {
+                Die();
+                GetComponentInParent<CircleCollider2D>().enabled = false;
+                isAlive = false;
+            }
 
-        if (otherScore < thisScore) {
-            GetComponentInParent<Player>().Score += (int)Math.Round(Math.Sqrt(otherScore));
+            if (otherScore < thisScore) {
+                GetComponentInParent<Player>().Score += (int)Math.Round(Math.Sqrt(otherScore));
+                SendScore();
+            }
+        } else if (other.tag == "Plankton") {
+            GetComponentInParent<Player>().Score += 1;
             SendScore();
+        } else if (other.tag == "Background") {
+            timer = 5f;
+            trigger = false;
         }
 
+    }
+
+    private void OnTriggerExit2D(Collider2D other) {
+        if (other.tag == "Background") {
+            trigger = true;
+        }
+    }
+
+    private void Update() {
+        if (trigger)
+            timer -= Time.deltaTime;
+
+        if (!isAlive)
+            timr -= Time.deltaTime;
+
+        if (0 >= timer) {
+            trigger = false;
+            isAlive = false;
+            timer = 5f;
+            Die();
+        }
+
+        if (0 >= timr)
+            Respawn();
+    }
+
+    private void Die() {
+        GetComponentInParent<CircleCollider2D>().enabled = false;
+        SendDeath();
+        Score = 5;
+    }
+
+    private void Respawn() {
+        GetComponentInParent<CircleCollider2D>().enabled = true;
+        isAlive = true;
+        timr = 7f;
+        transform.position = new Vector3((float)(r.NextDouble() * (GameLogic.Singleton.XYSize * 2) - GameLogic.Singleton.XYSize) * 10, (float)(r.NextDouble() * (GameLogic.Singleton.XYSize * 2) - GameLogic.Singleton.XYSize) * 10, 0f);
+        SendScore();
+        SendRespawn();
     }
 
     private void SendSpawned()
@@ -81,10 +145,15 @@ public class Player : MonoBehaviour
         NetworkManager.Singleton.Server.SendToAll(AddDeathData(Message.Create(MessageSendMode.Reliable, ServerToClientId.playerDeath)));
     }
 
+    private void SendRespawn() {
+        NetworkManager.Singleton.Server.SendToAll(AddRespawnData(Message.Create(MessageSendMode.Reliable, ServerToClientId.playerRespawn)));
+    }
+
     private Message AddSpawnData(Message message)
     {
         message.AddUShort(Id);
         message.AddString(Username);
+        message.AddBool(isAlive);
         message.AddVector3(transform.position);
         return message;
     }
@@ -97,6 +166,12 @@ public class Player : MonoBehaviour
 
     private Message AddDeathData(Message message) {
         message.AddUShort(Id);
+        return message;
+    }
+
+    private Message AddRespawnData(Message message) {
+        message.AddUShort(Id);
+        message.AddVector3(transform.position);
         return message;
     }
 

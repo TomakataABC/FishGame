@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Riptide;
 using Riptide.Utils;
+using System;
 
 public enum ServerToClientId : ushort
 {
@@ -10,6 +11,10 @@ public enum ServerToClientId : ushort
     playerMovement,
     playerScore,
     playerDeath,
+    playerRespawn,
+    planktonSpawn,
+    planktonDie,
+    bgChange,
 }
 
 public enum ClientToServerId : ushort
@@ -67,8 +72,13 @@ public class NetworkManager : MonoBehaviour
         Server.Stop();
     }
 
-    private void PlayerLeft(object sender, ServerDisconnectedEventArgs e)
-    {
+    private void PlayerLeft(object sender, ServerDisconnectedEventArgs e) {
+
+        GameLogic.Singleton.playerCount -= 1;
+        GameLogic.Singleton.XYSize -= (float)0.3;
+
+        GameLogic.Singleton.changeMap();
+
         if (Player.list.TryGetValue(e.Client.Id, out Player player))
             Destroy(player.gameObject);
     }

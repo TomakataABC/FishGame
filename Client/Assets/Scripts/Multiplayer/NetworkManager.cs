@@ -11,6 +11,10 @@ public enum ServerToClientId : ushort
     playerMovement,
     playerScore,
     playerDeath,
+    playerRespawn,
+    planktonSpawn,
+    planktonDie,
+    bgChange,
 }
 
 public enum ClientToServerId : ushort
@@ -97,4 +101,16 @@ public class NetworkManager : MonoBehaviour
             Destroy(player.gameObject);
         }
     }
+
+    [MessageHandler((ushort)ServerToClientId.planktonSpawn)]
+    private static void SpawnPlankton(Message message) {
+        Plankton.Spawn(message.GetUShort(), message.GetVector3());
+    }
+
+    [MessageHandler((ushort)ServerToClientId.bgChange)]
+    private static void ResizeMap(Message message) {
+        GameObject bg = GameObject.Find("Bg");
+        bg.transform.localScale = message.GetVector2();
+    }
+
 }

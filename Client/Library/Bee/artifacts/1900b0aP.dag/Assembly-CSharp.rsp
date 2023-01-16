@@ -322,6 +322,8 @@
 -r:"Library/Bee/artifacts/1900b0aP.dag/UnityEngine.UI.ref.dll"
 "Assets/Scripts/GameLogic.cs"
 "Assets/Scripts/Multiplayer/NetworkManager.cs"
+"Assets/Scripts/Plankton.cs"
+"Assets/Scripts/Player/BorderCheck.cs"
 "Assets/Scripts/Player/Player.cs"
 "Assets/Scripts/Player/PlayerCamera.cs"
 "Assets/Scripts/Player/PlayerController.cs"
