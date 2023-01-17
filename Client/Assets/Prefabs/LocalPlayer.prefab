@@ -687,6 +687,8 @@ MonoBehaviour:
   scoreText: {fileID: 1220666192516158028}
   RespawnScreen: {fileID: 4878933503037017465}
   TimerScreen: {fileID: 650526081957710267}
+  nickText: {fileID: 0}
+  Cam: {fileID: 7353283262204691211}
   isAlive: 0
 --- !u!114 &2777656863379216961
 MonoBehaviour:

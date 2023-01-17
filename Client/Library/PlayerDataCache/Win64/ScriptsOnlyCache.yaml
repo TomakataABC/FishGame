@@ -30,13 +30,12 @@ ScriptsOnlyBuild:
     - UnityEditor.Tilemaps.RandomBrush
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
-    UnityEditor.Graphs.dll:
-    - UnityEditor.Graphs.AnimationBlendTree.Graph
-    - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
-    - UnityEditor.Graphs.AnimationStateMachine.Graph
-    - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.StateNode
+    Unity.TextMeshPro.dll:
+    - TMPro.TMP_FontAsset
+    - TMPro.TMP_Settings
+    - TMPro.TMP_SpriteAsset
+    - TMPro.TMP_StyleSheet
+    - TMPro.TextMeshPro
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
@@ -53,10 +52,30 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.Shadow
     - UnityEngine.UI.Text
   serializedClasses:
+    Unity.TextMeshPro:
+    - TMPro.FaceInfo_Legacy
+    - TMPro.FontAssetCreationSettings
+    - TMPro.KerningTable
+    - TMPro.TMP_Character
+    - TMPro.TMP_FontFeatureTable
+    - TMPro.TMP_FontWeightPair
+    - TMPro.TMP_GlyphAdjustmentRecord
+    - TMPro.TMP_GlyphPairAdjustmentRecord
+    - TMPro.TMP_GlyphValueRecord
+    - TMPro.TMP_Sprite
+    - TMPro.TMP_SpriteCharacter
+    - TMPro.TMP_SpriteGlyph
+    - TMPro.TMP_Style
+    - TMPro.VertexGradient
     UnityEngine.CoreModule:
     - UnityEngine.Events.ArgumentCache
     - UnityEngine.Events.PersistentCallGroup
     - UnityEngine.Events.PersistentListenerMode
+    UnityEngine.TextCoreFontEngineModule:
+    - UnityEngine.TextCore.FaceInfo
+    - UnityEngine.TextCore.Glyph
+    - UnityEngine.TextCore.GlyphMetrics
+    - UnityEngine.TextCore.GlyphRect
     UnityEngine.UI:
     - UnityEngine.UI.AnimationTriggers
     - UnityEngine.UI.Button/ButtonClickedEvent
@@ -82,9 +101,13 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 21
       Script: {instanceID: 0}
+    - Class: 23
+      Script: {instanceID: 0}
     - Class: 28
       Script: {instanceID: 0}
     - Class: 48
+      Script: {instanceID: 0}
+    - Class: 49
       Script: {instanceID: 0}
     - Class: 50
       Script: {instanceID: 0}
@@ -109,35 +132,45 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2156}
     - Class: 114
-      Script: {instanceID: 2822}
+      Script: {instanceID: 2314}
     - Class: 114
-      Script: {instanceID: 2838}
+      Script: {instanceID: 2640}
     - Class: 114
-      Script: {instanceID: 3084}
+      Script: {instanceID: 2824}
     - Class: 114
-      Script: {instanceID: 3140}
+      Script: {instanceID: 2840}
     - Class: 114
-      Script: {instanceID: 3444}
+      Script: {instanceID: 3086}
     - Class: 114
-      Script: {instanceID: 5720}
+      Script: {instanceID: 3142}
+    - Class: 114
+      Script: {instanceID: 3446}
+    - Class: 114
+      Script: {instanceID: 3998}
+    - Class: 114
+      Script: {instanceID: 4726}
+    - Class: 114
+      Script: {instanceID: 5068}
     - Class: 114
       Script: {instanceID: 5722}
     - Class: 114
-      Script: {instanceID: 6334}
+      Script: {instanceID: 5724}
     - Class: 114
-      Script: {instanceID: 6732}
+      Script: {instanceID: 5988}
     - Class: 114
-      Script: {instanceID: 6978}
+      Script: {instanceID: 6336}
     - Class: 114
-      Script: {instanceID: 7356}
+      Script: {instanceID: 6734}
     - Class: 114
-      Script: {instanceID: 7790}
+      Script: {instanceID: 6980}
     - Class: 114
-      Script: {instanceID: 8900}
+      Script: {instanceID: 7344}
     - Class: 114
-      Script: {instanceID: 31362}
+      Script: {instanceID: 7360}
     - Class: 114
-      Script: {instanceID: 38022}
+      Script: {instanceID: 7794}
+    - Class: 114
+      Script: {instanceID: 8904}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -285,6 +318,12 @@ ScriptsOnlyBuild:
     className: SkeletonAsset
   - hash:
       serializedVersion: 2
+      Hash: 6255de654a910b65ce64671b0f6e5378
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: BorderCheck
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
@@ -297,7 +336,7 @@ ScriptsOnlyBuild:
     className: EventSystem
   - hash:
       serializedVersion: 2
-      Hash: ae40ef80a35eee1b0bbdb16cb969b9fa
+      Hash: 0a87f6efc18b18abad4106a2495435ae
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Player
@@ -825,6 +864,12 @@ ScriptsOnlyBuild:
     className: UnityOnMouseUpAsButtonMessageListener
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Plankton
+  - hash:
+      serializedVersion: 2
       Hash: e09e8bebc0fcd32bb8af1287a6b44816
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.EventSystems
@@ -1117,18 +1162,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
     className: UnityOnSliderValueChangedMessageListener
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Plankton
-  - hash:
-      serializedVersion: 2
-      Hash: 6255de654a910b65ce64671b0f6e5378
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: BorderCheck
   platform: 19
   scenePathNames:
   - Assets/Scenes/Game.unity

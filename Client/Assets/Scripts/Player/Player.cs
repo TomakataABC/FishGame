@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using Riptide;
+using TMPro;
 
 public class Player : MonoBehaviour
 {
@@ -23,6 +24,8 @@ public class Player : MonoBehaviour
     [SerializeField] private Text scoreText;
     [SerializeField] private GameObject RespawnScreen;
     [SerializeField] private GameObject TimerScreen;
+    [SerializeField] private TMP_Text nickText;
+    [SerializeField] private GameObject Cam;
 
     public bool isAlive;
 
@@ -43,6 +46,7 @@ public class Player : MonoBehaviour
         {
             player = Instantiate(GameLogic.Singleton.PlayerPrefab, position, Quaternion.identity).GetComponent<Player>();
             player.IsLocal = false;
+            player.nickText.text = username;
         }
 
         player.isAlive = isNotdead;
@@ -75,6 +79,10 @@ public class Player : MonoBehaviour
         Player player = list[id];
         player.isAlive = false;
         player.GetComponent<SpriteRenderer>().enabled = false;
+
+        if (!player.IsLocal)
+            player.nickText.enabled = false;
+
     }
 
     private void Die() {
@@ -96,19 +104,28 @@ public class Player : MonoBehaviour
         Player player = list[id];
         player.isAlive = true;
         player.GetComponent<SpriteRenderer>().enabled = true;
+        if (!player.IsLocal)
+            player.nickText.enabled = true;
         player.transform.position = poz;
     }
 
      void CheckSprite()
     {
-        if (Score >= 70)
+        /*if (Score >= 70)
         {
             GetComponentInParent<SpriteRenderer>().enabled = false;
             isAlive = false;
         }
-        else if (Score >= 50 &&  GetComponentInParent<SpriteRenderer>().sprite != shark)
+        */
+        if (Score >= 50 &&  GetComponentInParent<SpriteRenderer>().sprite != shark)
         {
             GetComponentInParent<SpriteRenderer>().sprite = shark;
+
+            if (IsLocal) 
+                StartCoroutine(SmoothCameraThing(60));
+
+            if (!IsLocal)
+                nickText.rectTransform.anchoredPosition = new Vector2(0f, 9f);
 
             StartCoroutine(SmoothScaleTransitionCoroutine(0.15f, 0.15f));
         }
@@ -118,6 +135,9 @@ public class Player : MonoBehaviour
 
             transform.localScale = new Vector3(0.015f, 0.055f, 1f);
 
+            if (IsLocal) 
+                StartCoroutine(SmoothCameraThing(50));
+
             StartCoroutine(SmoothScaleTransitionCoroutine(0.085f, 0.085f));
         }
         else if (Score >= 18 && Score < 30 && GetComponentInParent<SpriteRenderer>().sprite != pufferFish)
@@ -125,6 +145,9 @@ public class Player : MonoBehaviour
             GetComponentInParent<SpriteRenderer>().sprite = pufferFish;
 
             transform.localScale = new Vector3(0.035f, 0.075f, 1f);
+
+            if (IsLocal) 
+                StartCoroutine(SmoothCameraThing(45));
 
             StartCoroutine(SmoothScaleTransitionCoroutine(0.11f, 0.07f));
         }
@@ -134,6 +157,12 @@ public class Player : MonoBehaviour
 
             transform.localScale = new Vector3(0.07f, 0.1f, 1f);
 
+            if (IsLocal) 
+                StartCoroutine(SmoothCameraThing(40));
+
+            if (!IsLocal)
+                nickText.rectTransform.anchoredPosition = new Vector2(0f, 12f);
+
             StartCoroutine(SmoothScaleTransitionCoroutine(0.04f, 0.06f));
         }
         else if (GetComponentInParent<SpriteRenderer>().sprite == null || Score < 10)
@@ -141,6 +170,13 @@ public class Player : MonoBehaviour
             GetComponentInParent<SpriteRenderer>().sprite = lowFish;
 
             transform.localScale = new Vector3(0.09f, 0.13f, 1f);
+
+            if (IsLocal) 
+                Cam.GetComponent<Camera>().fieldOfView = 30;
+
+            if (!IsLocal)
+                nickText.rectTransform.anchoredPosition = new Vector2(0f, 6f);
+
         }
     }
 
@@ -150,6 +186,14 @@ public class Player : MonoBehaviour
         {
             transform.localScale = new Vector3(transform.localScale.x + difference / 100, transform.localScale.y + differenceTwo / 100, 1f);
             yield return new WaitForSecondsRealtime(0.3f / 100);
+        }
+    }
+
+    IEnumerator SmoothCameraThing(float target)
+    {
+        while (target > Cam.GetComponent<Camera>().fieldOfView) {
+            Cam.GetComponent<Camera>().fieldOfView += 0.01f;
+            yield return new WaitForSecondsRealtime(0.1f / 100);
         }
     }
 
