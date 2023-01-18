@@ -126,51 +126,51 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1594}
+      Script: {instanceID: 1620}
     - Class: 114
-      Script: {instanceID: 1820}
+      Script: {instanceID: 1846}
     - Class: 114
-      Script: {instanceID: 2156}
+      Script: {instanceID: 2182}
     - Class: 114
-      Script: {instanceID: 2314}
+      Script: {instanceID: 2340}
     - Class: 114
-      Script: {instanceID: 2640}
+      Script: {instanceID: 2666}
     - Class: 114
-      Script: {instanceID: 2824}
+      Script: {instanceID: 2850}
     - Class: 114
-      Script: {instanceID: 2840}
+      Script: {instanceID: 2866}
     - Class: 114
-      Script: {instanceID: 3086}
+      Script: {instanceID: 3112}
     - Class: 114
-      Script: {instanceID: 3142}
+      Script: {instanceID: 3168}
     - Class: 114
-      Script: {instanceID: 3446}
+      Script: {instanceID: 3472}
     - Class: 114
-      Script: {instanceID: 3998}
+      Script: {instanceID: 4024}
     - Class: 114
-      Script: {instanceID: 4726}
+      Script: {instanceID: 4752}
     - Class: 114
-      Script: {instanceID: 5068}
+      Script: {instanceID: 5094}
     - Class: 114
-      Script: {instanceID: 5722}
+      Script: {instanceID: 5748}
     - Class: 114
-      Script: {instanceID: 5724}
+      Script: {instanceID: 5750}
     - Class: 114
-      Script: {instanceID: 5988}
+      Script: {instanceID: 6014}
     - Class: 114
-      Script: {instanceID: 6336}
+      Script: {instanceID: 6362}
     - Class: 114
-      Script: {instanceID: 6734}
+      Script: {instanceID: 6760}
     - Class: 114
-      Script: {instanceID: 6980}
+      Script: {instanceID: 7006}
     - Class: 114
-      Script: {instanceID: 7344}
+      Script: {instanceID: 7370}
     - Class: 114
-      Script: {instanceID: 7360}
+      Script: {instanceID: 7386}
     - Class: 114
-      Script: {instanceID: 7794}
+      Script: {instanceID: 7820}
     - Class: 114
-      Script: {instanceID: 8904}
+      Script: {instanceID: 8930}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -336,7 +336,7 @@ ScriptsOnlyBuild:
     className: EventSystem
   - hash:
       serializedVersion: 2
-      Hash: 0a87f6efc18b18abad4106a2495435ae
+      Hash: abc6d225a357db05f61bf68593617df2
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Player
@@ -1165,4 +1165,4 @@ ScriptsOnlyBuild:
   platform: 19
   scenePathNames:
   - Assets/Scenes/Game.unity
-  playerPath: C:/Users/zippy/Documents/GitHub/FishGame/Client/Build/Client.exe
+  playerPath: C:/Users/zippy/Documents/GitHub/FishGame/Client/Clean/Client.exe
